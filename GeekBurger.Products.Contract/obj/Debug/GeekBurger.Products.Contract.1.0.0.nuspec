@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>GeekBurger.Products.Contract</id>
+    <version>1.0.0</version>
+    <authors>GeekBurger.Products.Contract</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="Microsoft.EntityFrameworkCore" version="7.0.11" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.InMemory" version="7.0.11" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Eduardo Cesar\source\repos\GeekBurger\GeekBurger.Products.Contract\bin\Debug\net6.0\GeekBurger.Products.Contract.dll" target="lib\net6.0\GeekBurger.Products.Contract.dll" />
+  </files>
+</package>

@@ -1,0 +1,12 @@
+C:\Users\Eduardo Cesar\source\repos\GeekBurger\GeekBurger.Service.Contract\bin\Debug\net6.0\GeekBurger.Service.Contract.deps.json
+C:\Users\Eduardo Cesar\source\repos\GeekBurger\GeekBurger.Service.Contract\bin\Debug\net6.0\GeekBurger.Service.Contract.dll
+C:\Users\Eduardo Cesar\source\repos\GeekBurger\GeekBurger.Service.Contract\bin\Debug\net6.0\ref\GeekBurger.Service.Contract.dll
+C:\Users\Eduardo Cesar\source\repos\GeekBurger\GeekBurger.Service.Contract\bin\Debug\net6.0\GeekBurger.Service.Contract.pdb
+C:\Users\Eduardo Cesar\source\repos\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\GeekBurger.Service.Contract.csproj.AssemblyReference.cache
+C:\Users\Eduardo Cesar\source\repos\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\GeekBurger.Service.Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eduardo Cesar\source\repos\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\GeekBurger.Service.Contract.AssemblyInfoInputs.cache
+C:\Users\Eduardo Cesar\source\repos\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\GeekBurger.Service.Contract.AssemblyInfo.cs
+C:\Users\Eduardo Cesar\source\repos\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\GeekBurger.Service.Contract.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo Cesar\source\repos\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\GeekBurger.Service.Contract.dll
+C:\Users\Eduardo Cesar\source\repos\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\ref\GeekBurger.Service.Contract.dll
+C:\Users\Eduardo Cesar\source\repos\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\GeekBurger.Service.Contract.pdb
