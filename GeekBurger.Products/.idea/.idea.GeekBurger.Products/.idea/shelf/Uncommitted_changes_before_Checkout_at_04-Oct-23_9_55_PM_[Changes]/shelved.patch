@@ -1,0 +1,19 @@
+Index: ../GeekBurger.Products.Contract/obj/Debug/net6.0/GeekBurger.Products.Contract.GeneratedMSBuildEditorConfig.editorconfig
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>is_global = true\r\nbuild_property.TargetFramework = net6.0\r\nbuild_property.TargetPlatformMinVersion = \r\nbuild_property.UsingMicrosoftNETSdkWeb = \r\nbuild_property.ProjectTypeGuids = \r\nbuild_property.InvariantGlobalization = \r\nbuild_property.PlatformNeutralAssembly = \r\nbuild_property._SupportedPlatformList = Linux,macOS,Windows\r\nbuild_property.RootNamespace = GeekBurger.Products.Contract\r\nbuild_property.ProjectDir = C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Arquitetura_Integracao_Microsservicos\\GeekBurger\\GeekBurger.Products.Contract\\\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../GeekBurger.Products.Contract/obj/Debug/net6.0/GeekBurger.Products.Contract.GeneratedMSBuildEditorConfig.editorconfig b/../GeekBurger.Products.Contract/obj/Debug/net6.0/GeekBurger.Products.Contract.GeneratedMSBuildEditorConfig.editorconfig
+--- a/../GeekBurger.Products.Contract/obj/Debug/net6.0/GeekBurger.Products.Contract.GeneratedMSBuildEditorConfig.editorconfig	(revision 8d8fa28ebf42870c7f3b6ede82dcef677a1e1157)
++++ b/../GeekBurger.Products.Contract/obj/Debug/net6.0/GeekBurger.Products.Contract.GeneratedMSBuildEditorConfig.editorconfig	(date 1696467304239)
+@@ -5,6 +5,7 @@
+ build_property.ProjectTypeGuids = 
+ build_property.InvariantGlobalization = 
+ build_property.PlatformNeutralAssembly = 
++build_property.EnforceExtendedAnalyzerRules = 
+ build_property._SupportedPlatformList = Linux,macOS,Windows
+ build_property.RootNamespace = GeekBurger.Products.Contract
+-build_property.ProjectDir = C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Products.Contract\
++build_property.ProjectDir = D:\FIAP\GeekBurger\GeekBurger.Products.Contract\

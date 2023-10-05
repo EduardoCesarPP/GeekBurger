@@ -10,3 +10,15 @@ C:\Users\Eduardo Cesar\source\repos\GeekBurger\GeekBurger.Service.Contract\obj\D
 C:\Users\Eduardo Cesar\source\repos\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\GeekBurger.Service.Contract.dll
 C:\Users\Eduardo Cesar\source\repos\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\ref\GeekBurger.Service.Contract.dll
 C:\Users\Eduardo Cesar\source\repos\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\GeekBurger.Service.Contract.pdb
+D:\FIAP\GeekBurger\GeekBurger.Service.Contract\bin\Debug\net6.0\GeekBurger.Service.Contract.deps.json
+D:\FIAP\GeekBurger\GeekBurger.Service.Contract\bin\Debug\net6.0\GeekBurger.Service.Contract.dll
+D:\FIAP\GeekBurger\GeekBurger.Service.Contract\bin\Debug\net6.0\GeekBurger.Service.Contract.pdb
+D:\FIAP\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\GeekBurger.Service.Contract.csproj.AssemblyReference.cache
+D:\FIAP\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\GeekBurger.Service.Contract.GeneratedMSBuildEditorConfig.editorconfig
+D:\FIAP\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\GeekBurger.Service.Contract.AssemblyInfoInputs.cache
+D:\FIAP\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\GeekBurger.Service.Contract.AssemblyInfo.cs
+D:\FIAP\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\GeekBurger.Service.Contract.csproj.CoreCompileInputs.cache
+D:\FIAP\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\GeekBurger.Service.Contract.dll
+D:\FIAP\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\refint\GeekBurger.Service.Contract.dll
+D:\FIAP\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\GeekBurger.Service.Contract.pdb
+D:\FIAP\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\ref\GeekBurger.Service.Contract.dll

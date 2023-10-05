@@ -1,4 +1,3 @@
-
 using GeekBurger.Products.Contract.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;

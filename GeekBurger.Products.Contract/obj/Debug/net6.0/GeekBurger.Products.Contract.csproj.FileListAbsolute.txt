@@ -21,3 +21,15 @@ C:\Users\Eduardo Cesar\Source\Repos\GeekBurger\GeekBurger.Products.Contract\obj\
 C:\Users\Eduardo Cesar\Source\Repos\GeekBurger\GeekBurger.Products.Contract\obj\Debug\net6.0\ref\GeekBurger.Products.Contract.dll
 C:\Users\Eduardo Cesar\Source\Repos\GeekBurger\GeekBurger.Products.Contract\obj\Debug\net6.0\GeekBurger.Products.Contract.pdb
 C:\Users\Eduardo Cesar\source\repos\GeekBurger\GeekBurger.Products.Contract\obj\Debug\net6.0\GeekBurger.Products.Contract.csproj.AssemblyReference.cache
+D:\FIAP\GeekBurger\GeekBurger.Products.Contract\bin\Debug\net6.0\GeekBurger.Products.Contract.deps.json
+D:\FIAP\GeekBurger\GeekBurger.Products.Contract\bin\Debug\net6.0\GeekBurger.Products.Contract.dll
+D:\FIAP\GeekBurger\GeekBurger.Products.Contract\bin\Debug\net6.0\GeekBurger.Products.Contract.pdb
+D:\FIAP\GeekBurger\GeekBurger.Products.Contract\obj\Debug\net6.0\GeekBurger.Products.Contract.csproj.AssemblyReference.cache
+D:\FIAP\GeekBurger\GeekBurger.Products.Contract\obj\Debug\net6.0\GeekBurger.Products.Contract.GeneratedMSBuildEditorConfig.editorconfig
+D:\FIAP\GeekBurger\GeekBurger.Products.Contract\obj\Debug\net6.0\GeekBurger.Products.Contract.AssemblyInfoInputs.cache
+D:\FIAP\GeekBurger\GeekBurger.Products.Contract\obj\Debug\net6.0\GeekBurger.Products.Contract.AssemblyInfo.cs
+D:\FIAP\GeekBurger\GeekBurger.Products.Contract\obj\Debug\net6.0\GeekBurger.Products.Contract.csproj.CoreCompileInputs.cache
+D:\FIAP\GeekBurger\GeekBurger.Products.Contract\obj\Debug\net6.0\GeekBurger.Products.Contract.dll
+D:\FIAP\GeekBurger\GeekBurger.Products.Contract\obj\Debug\net6.0\refint\GeekBurger.Products.Contract.dll
+D:\FIAP\GeekBurger\GeekBurger.Products.Contract\obj\Debug\net6.0\GeekBurger.Products.Contract.pdb
+D:\FIAP\GeekBurger\GeekBurger.Products.Contract\obj\Debug\net6.0\ref\GeekBurger.Products.Contract.dll
