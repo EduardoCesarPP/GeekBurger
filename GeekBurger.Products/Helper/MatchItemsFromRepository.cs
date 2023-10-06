@@ -1,10 +1,13 @@
 ﻿using AutoMapper;
 using GeekBurger.Products.Contract;
+using GeekBurger.Products.Contract.Model;
+using GeekBurger.Products.Contract.Repository;
+
 using GeekBurger.Service.Contract;
 
 namespace GeekBurger.Products.Helper
 {
-    public class MatchItemsFromRepository : IMappingAction<ItemToUpsert, Item>
+    public class MatchItemsFromRepository : IMappingAction<ItemToUpsert, Ingredient>
     {
         private IProductsRepository _productRepository;
         public MatchItemsFromRepository(IProductsRepository productRepository)
@@ -12,7 +15,7 @@ namespace GeekBurger.Products.Helper
             _productRepository = productRepository;
         }
 
-        public void Process(ItemToUpsert source, Item destination, ResolutionContext context)
+        public void Process(ItemToUpsert source, Ingredient destination, ResolutionContext context)
         {
             var fullListOfItems = _productRepository.GetFullListOfItems();
             var itemFound = fullListOfItems?.FirstOrDefault(item => item.Name.Equals(source.Name, StringComparison.InvariantCultureIgnoreCase));

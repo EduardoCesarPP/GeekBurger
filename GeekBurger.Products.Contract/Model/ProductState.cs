@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeekBurger.Products.Contract
+namespace GeekBurger.Products.Contract.Model
 {
     public enum ProductState
     {

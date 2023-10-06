@@ -1,8 +1,9 @@
-using GeekBurger.Products.Contract;
-using Microsoft.EntityFrameworkCore;
+using GeekBurger.Products.Contract.Model;
 
-public interface IStoreRepository
+namespace GeekBurger.Products.Contract.Repository
 {
-    public Store GetStoreByName(string storeName);
-}
-
+    public interface IStoreRepository
+    {
+        public Store GetStoreByName(string storeName);
+    }
+    }

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GeekBurger.Products.Contract
+namespace GeekBurger.Products.Contract.Model
 {
     public class Product
     {
@@ -12,6 +12,8 @@ namespace GeekBurger.Products.Contract
         public Guid ProductId { get; set; }
         public string Name { get; set; }
         public string Image { get; set; }
-        public List<Item> Ingredients { get; set; } = new List<Item>();
+        public decimal Price { get; set; }
+        public List<Ingredient> Ingredients { get; set; } = new List<Ingredient>();
+        public List<ProductOrder> Orders { get; set; } = new List<ProductOrder>();
     }
 }

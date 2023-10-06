@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using GeekBurger.Products.Contract;
+using GeekBurger.Products.Contract.Model;
 using GeekBurger.Service.Contract;
 using Microsoft.AspNetCore.Mvc;
 
@@ -45,6 +46,25 @@ public class ProductsController : Controller
 
         var productToGet = _mapper.Map<ProductToGet>(product);
         return CreatedAtRoute("GetProduct", new { id = productToGet.ProductId }, productToGet);
+    }
+
+    [HttpPost("lote")]
+    public IActionResult AddProducts([FromBody] List<ProductToUpsert> productsToAdd)
+    {
+        if (productsToAdd == null)
+            return BadRequest();
+
+        var products = _mapper.Map<List<Product>>(productsToAdd);
+        if (products.Any(p => p.StoreId == Guid.Empty))
+            return new UnprocessableEntityResult();
+
+        products.ForEach(product =>
+        {
+            _productsRepository.Add(product);
+            _productsRepository.Save();
+        });
+
+        return Ok();
     }
 
     [HttpGet("{id}", Name = "GetProduct")]

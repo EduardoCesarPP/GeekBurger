@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using GeekBurger.Products.Contract;
+using GeekBurger.Products.Contract.Model;
+using GeekBurger.Products.Contract.Repository;
 using GeekBurger.Service.Contract;
 
 namespace GeekBurger.Products.Helper

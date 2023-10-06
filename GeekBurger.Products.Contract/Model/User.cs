@@ -6,15 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeekBurger.Products.Contract
+namespace GeekBurger.Products.Contract.Model
 {
-    public class Item
+    public class User
     {
         [Key]
-        public Guid ItemId { get; set; }
-        public string Name { get; set; }
-        [ForeignKey("ProductId")]
-        public Product Product { get; set; }
- }
-
+        public string CPF { get; set; }
+        public List<FoodRestrictions> Restrictions { get; set; } = new List<FoodRestrictions>();
+    }
 }

@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using GeekBurger.Products.Contract;
+using GeekBurger.Products.Contract.Model;
 using GeekBurger.Service.Contract;
 
 namespace GeekBurger.Products.Helper
@@ -9,10 +9,13 @@ namespace GeekBurger.Products.Helper
         public AutomapperProfile()
         {
             CreateMap<Product, ProductToGet>();
-            CreateMap<Item, ItemToGet>();
+            CreateMap<Ingredient, ItemToGet>();
+            CreateMap<Product, StoreCatalog>()
+                .ForMember(c => c.StoreName, opt => opt.MapFrom(product => product.Store.Name));
             CreateMap<ProductToUpsert, Product>().AfterMap<MatchStoreFromRepository>();
+            CreateMap<ItemToUpsert, Ingredient>().AfterMap<MatchItemsFromRepository>();
 
-            CreateMap<ItemToUpsert, Item>()            .AfterMap<MatchItemsFromRepository>();
+            CreateMap<PaymentToUpsert, Payment>();
         }
     }
 }

@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "GeekBurger.Products.Contract/1.0.0": {
+      "GeekBurger.Products.Contract/2.1.5": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.11",
           "Microsoft.EntityFrameworkCore.InMemory": "7.0.11"
@@ -144,7 +144,7 @@
     }
   },
   "libraries": {
-    "GeekBurger.Products.Contract/1.0.0": {
+    "GeekBurger.Products.Contract/2.1.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

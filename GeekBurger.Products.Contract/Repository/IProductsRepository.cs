@@ -1,4 +1,5 @@
 using GeekBurger.Products.Contract;
+using GeekBurger.Products.Contract.Model;
 using Microsoft.EntityFrameworkCore;
 
 public interface IProductsRepository
@@ -7,6 +8,7 @@ public interface IProductsRepository
     public bool Add(Product product);
     public void Save();
     public Product GetProductById(Guid id);
-    public IEnumerable<Item> GetFullListOfItems();
+    public IEnumerable<Ingredient> GetFullListOfItems();
+    public IEnumerable<Product> GetProductsByRestrictions(List<FoodCharacteristics> restrictions);
 }
 
