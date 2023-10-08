@@ -1,6 +1,0 @@
-C:\Users\vbawa\OneDrive\Desktop\GeekBurger\GeekBurger.UnitTests\bin\Debug\net6.0\CoverletSourceRootsMapping
-C:\Users\vbawa\OneDrive\Desktop\GeekBurger\GeekBurger.UnitTests\obj\Debug\net6.0\GeekBurger.UnitTests.csproj.AssemblyReference.cache
-C:\Users\vbawa\OneDrive\Desktop\GeekBurger\GeekBurger.UnitTests\obj\Debug\net6.0\GeekBurger.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\vbawa\OneDrive\Desktop\GeekBurger\GeekBurger.UnitTests\obj\Debug\net6.0\GeekBurger.UnitTests.AssemblyInfoInputs.cache
-C:\Users\vbawa\OneDrive\Desktop\GeekBurger\GeekBurger.UnitTests\obj\Debug\net6.0\GeekBurger.UnitTests.AssemblyInfo.cs
-C:\Users\vbawa\OneDrive\Desktop\GeekBurger\GeekBurger.UnitTests\obj\Debug\net6.0\GeekBurger.UnitTests.csproj.CoreCompileInputs.cache
