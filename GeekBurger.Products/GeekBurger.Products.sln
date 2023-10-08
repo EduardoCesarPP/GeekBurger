@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeekBurger.Products", "GeekBurger.Products.csproj", "{2288E7C4-9059-4CDC-A8A8-DA2E810F0C42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekBurger.Products", "GeekBurger.Products.csproj", "{2288E7C4-9059-4CDC-A8A8-DA2E810F0C42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeekBurger.Products.Contract", "..\GeekBurger.Products.Contract\GeekBurger.Products.Contract.csproj", "{35927341-899A-47F9-8501-834CEC30C92F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekBurger.Products.Contract", "..\GeekBurger.Products.Contract\GeekBurger.Products.Contract.csproj", "{35927341-899A-47F9-8501-834CEC30C92F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeekBurger.Tests", "..\GeekBurger.Tests\GeekBurger.Tests.csproj", "{2D2F921D-0E2D-4D22-9509-615278A91B7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{35927341-899A-47F9-8501-834CEC30C92F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35927341-899A-47F9-8501-834CEC30C92F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35927341-899A-47F9-8501-834CEC30C92F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D2F921D-0E2D-4D22-9509-615278A91B7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D2F921D-0E2D-4D22-9509-615278A91B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D2F921D-0E2D-4D22-9509-615278A91B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D2F921D-0E2D-4D22-9509-615278A91B7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
