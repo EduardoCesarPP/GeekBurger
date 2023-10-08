@@ -1,4 +1,3 @@
-using AutoMapper;
 using GeekBurger.Products.Repository;
 using GeekBurger.Products.Repository.Interfaces;
 

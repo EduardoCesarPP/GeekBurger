@@ -1,14 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Y6V9XnuOQn2LOCi8LxGXnJmU+vrO2adYsnMeUSPrCx9HhkLzITMK0ycZIdfeVK7Nt8xo0FEln5IKLvKIjrEoyQ==",
+  "dgSpecHash": "31oW6NezrncddTHwy+fIJwyPvt3w5nlVj2C3EHwM1yGODcvq9MIOk1BfnTmbfRAlBBIi9vV0OHu1nn4ogqOCZw==",
   "success": true,
   "projectFilePath": "C:\\Users\\vbawa\\OneDrive\\Desktop\\GeekBurger\\GeekBurger.Tests\\GeekBurger.Tests.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vbawa\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\vbawa\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\vbawa\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\vbawa\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",
-    "C:\\Users\\vbawa\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\vbawa\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\vbawa\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\vbawa\\.nuget\\packages\\microsoft.net.test.sdk\\17.1.0\\microsoft.net.test.sdk.17.1.0.nupkg.sha512",
     "C:\\Users\\vbawa\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

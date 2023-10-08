@@ -4,6 +4,8 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>C:\Users\vbawa\OneDrive\Desktop\GeekBurger\GeekBurger.Products.Contract</DockerfileContext>
   </PropertyGroup>
 
 </Project>

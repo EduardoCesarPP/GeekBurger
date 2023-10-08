@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using GeekBurger.Products.Repository.Interfaces;
+﻿using GeekBurger.Products.Repository.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GeekBurger.Products.Controllers
