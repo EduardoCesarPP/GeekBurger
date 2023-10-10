@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GeekBurger.Products.Contract\GeekBurger.Products.Contract.csproj" />
+  </ItemGroup>
+
 </Project>

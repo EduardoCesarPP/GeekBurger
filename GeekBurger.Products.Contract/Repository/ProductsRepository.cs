@@ -18,8 +18,11 @@ namespace GeekBurger.Products.Contract.Repository
         public IEnumerable<Product> GetProductsByStoreName(string storeName)
         {
             var products = _context.Products?
+                .Include(x => x.Store)
+                .Include(product => product.Ingredients)
                 .Where(product => product.Store.Name.Equals(storeName, StringComparison.InvariantCultureIgnoreCase))
-                .Include(product => product.Ingredients);
+                .ToList();
+            
             return products;
         }
 

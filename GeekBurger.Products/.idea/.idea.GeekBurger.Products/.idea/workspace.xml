@@ -8,47 +8,103 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="373869ec-bf41-42c3-8164-831b1a8c3733" name="Changes" comment="" />
+    <list default="true" id="373869ec-bf41-42c3-8164-831b1a8c3733" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../GeekBurger.Products.Contract/Model/ProductChangedEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Repositories/IProductChangedEventRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Repositories/ProductChangedEventRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/ILogService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/IProductChangedService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/LogService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/ProductChangedService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/ServiceBusConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GeekBurger.Service.Contract/ProductChangedMessage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Products.Contract/GeekBurger.Products.Contract.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Products.Contract/GeekBurger.Products.Contract.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Products.Contract/Repository/ProductsDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Products.Contract/Repository/ProductsDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Products.Contract/bin/Debug/GeekBurger.Products.Contract.1.0.0.nupkg" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Products.Contract/bin/Debug/GeekBurger.Products.Contract.1.0.0.nupkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Products.Contract/bin/Debug/net6.0/GeekBurger.Products.Contract.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Products.Contract/bin/Debug/net6.0/GeekBurger.Products.Contract.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Products.Contract/bin/Debug/net6.0/GeekBurger.Products.Contract.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Products.Contract/bin/Debug/net6.0/GeekBurger.Products.Contract.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Products.Contract/obj/Debug/net6.0/GeekBurger.Products.Contract.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Products.Contract/obj/Debug/net6.0/GeekBurger.Products.Contract.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Products.Contract/obj/Debug/net6.0/GeekBurger.Products.Contract.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Products.Contract/obj/Debug/net6.0/GeekBurger.Products.Contract.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Products.Contract/obj/Debug/net6.0/GeekBurger.Products.Contract.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Products.Contract/obj/Debug/net6.0/GeekBurger.Products.Contract.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Products.Contract/obj/Debug/net6.0/GeekBurger.Products.Contract.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Products.Contract/obj/Debug/net6.0/GeekBurger.Products.Contract.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Products.Contract/obj/Debug/net6.0/ref/GeekBurger.Products.Contract.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Products.Contract/obj/Debug/net6.0/ref/GeekBurger.Products.Contract.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Products.Contract/obj/Debug/net6.0/refint/GeekBurger.Products.Contract.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Products.Contract/obj/Debug/net6.0/refint/GeekBurger.Products.Contract.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Products.Contract/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Products.Contract/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Products.Contract/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Products.Contract/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Products.Contract/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Products.Contract/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GeekBurger.Products/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeekBurger.Products/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/ProductsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/ProductsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeekBurger.Products.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GeekBurger.Products.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeekBurger.Products.sln" beforeDir="false" afterPath="$PROJECT_DIR$/GeekBurger.Products.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Service.Contract/GeekBurger.Service.Contract.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Service.Contract/GeekBurger.Service.Contract.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Service.Contract/ProductToUpsert.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Service.Contract/ProductToUpsert.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Service.Contract/bin/Debug/net6.0/GeekBurger.Service.Contract.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Service.Contract/bin/Debug/net6.0/GeekBurger.Service.Contract.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Service.Contract/bin/Debug/net6.0/GeekBurger.Service.Contract.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Service.Contract/bin/Debug/net6.0/GeekBurger.Service.Contract.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Service.Contract/bin/Debug/net6.0/GeekBurger.Service.Contract.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Service.Contract/bin/Debug/net6.0/GeekBurger.Service.Contract.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/Debug/net6.0/GeekBurger.Service.Contract.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/Debug/net6.0/GeekBurger.Service.Contract.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/Debug/net6.0/GeekBurger.Service.Contract.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/Debug/net6.0/GeekBurger.Service.Contract.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/Debug/net6.0/GeekBurger.Service.Contract.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/Debug/net6.0/GeekBurger.Service.Contract.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/Debug/net6.0/GeekBurger.Service.Contract.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/Debug/net6.0/GeekBurger.Service.Contract.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/Debug/net6.0/GeekBurger.Service.Contract.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/Debug/net6.0/GeekBurger.Service.Contract.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/Debug/net6.0/GeekBurger.Service.Contract.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/Debug/net6.0/GeekBurger.Service.Contract.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/Debug/net6.0/ref/GeekBurger.Service.Contract.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/Debug/net6.0/ref/GeekBurger.Service.Contract.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/GeekBurger.Service.Contract.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/GeekBurger.Service.Contract.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/GeekBurger.Service.Contract.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/GeekBurger.Service.Contract.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/GeekBurger.Service.Contract.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/GeekBurger.Service.Contract.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekBurger.Service.Contract/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="Atividade_3" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/fa8500935d35465399870036fd9d74382e00/67/7509a242/ProductsDbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/55ee11cb246df18e56b15c742fcb127785c29bfb43833af6ab0df77f859c/ServiceBusAdministrationClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2WK2FYc9xSfEeafmpV5BSE2hSVd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "configurable.group.appearance",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Atividade__4&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;RiderNuGetOptionsPageId&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Felipe\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Felipe\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
-      "C:\\Users\\Felipe\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Felipe\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Felipe\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Felipe\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.GeekBurger.Products">
     <configuration name="GeekBurger.Products" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/GeekBurger.Products.csproj" />
@@ -90,6 +146,8 @@
       <option name="presentableId" value="Default" />
       <updated>1696466849853</updated>
       <workItem from="1696466853364" duration="797000" />
+      <workItem from="1696467949839" duration="2783000" />
+      <workItem from="1696979533074" duration="1337000" />
     </task>
     <servers />
   </component>
@@ -110,5 +168,37 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Controllers/ProductsController.cs</url>
+          <line>35</line>
+          <properties documentPath="D:\FIAP\GeekBurger\GeekBurger.Products\Controllers\ProductsController.cs" initialLine="35" containingFunctionPresentation="Method 'AddProduct'">
+            <startOffsets>
+              <option value="973" />
+            </startOffsets>
+            <endOffsets>
+              <option value="974" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Controllers/ProductsController.cs</url>
+          <line>25</line>
+          <properties documentPath="D:\FIAP\GeekBurger\GeekBurger.Products\Controllers\ProductsController.cs" initialLine="25" containingFunctionPresentation="Method 'GetProductsByStoreName'">
+            <startOffsets>
+              <option value="558" />
+            </startOffsets>
+            <endOffsets>
+              <option value="559" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

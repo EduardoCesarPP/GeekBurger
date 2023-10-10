@@ -38,11 +38,15 @@ public class ProductsController : Controller
             return BadRequest();
 
         var product = _mapper.Map<Product>(productToAdd);
+        product.StoreId = Guid.NewGuid();
+        
         if (product.StoreId == Guid.Empty)
             return new UnprocessableEntityResult();
+        
+        product.Store = new Store { StoreId = product.StoreId, Name = productToAdd.StoreName };
         _productsRepository.Add(product);
         _productsRepository.Save();
-
+        
         var productToGet = _mapper.Map<ProductToGet>(product);
         return CreatedAtRoute("GetProduct", new { id = productToGet.ProductId }, productToGet);
     }
