@@ -18,6 +18,7 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 6.0.x
+        
     - name: Restore dependencies
       run: dotnet restore
       working-directory: ./GeekBurger.Products
@@ -28,6 +29,10 @@ jobs:
       
     - name: Pack
       run: dotnet pack --no-restore -o ./nupkgs /p:Version=2.0.${{ github.run_number }}  
+      working-directory: ./GeekBurger.Products
+
+    - name: Tests
+      run: dotnet test --no-build --verbosity normal # --no-build porque já compilamos na etapa anterior
       working-directory: ./GeekBurger.Products
       
     - name: Push nuget
