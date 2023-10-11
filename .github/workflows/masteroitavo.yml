@@ -31,5 +31,5 @@ jobs:
       working-directory: ./GeekBurger.Products
       
     - name: Push nuget
-      run: dotnet nuget push ./nupkgs/*.nupkg -k ${{ secrets.NUGET_API_KEY}} -s https://fiap22net.azurewebsites.net/nuget
+      run: dotnet nuget push ./nupkgs/*.nupkg -k ${{ secrets.NUGET_API_KEY}} -s http://nugetfiapdotnet.azurewebsites.net/nuget
       working-directory: ./GeekBurger.Products
