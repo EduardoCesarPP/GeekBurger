@@ -118,7 +118,7 @@
             },
             "GeekBurger.Products.Contract": {
               "target": "Package",
-              "version": "[2.1.5, )"
+              "version": "[2.1.6, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

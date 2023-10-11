@@ -1,4 +1,5 @@
 using GeekBurger.Products.Contract.Repository;
+using GeekBurger.Products.Contract.Service;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
@@ -13,12 +14,14 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ProductsDbContext>(o => o.UseInMemoryDatabase("geekburger-products"));
 builder.Services.AddScoped<IStoreRepository, StoresRepository>();
+builder.Services.AddScoped<ILogService, LogService>();
+builder.Services.AddScoped<IOrderChangedService, OrderChangedService>();
 builder.Services.AddScoped<IOrderRepository, OrdersRepository>();
 builder.Services.AddScoped<IPaymentRepository, PaymentsRepository>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var mvcCoreBuilder = builder.Services.AddMvc();
-builder.Services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo { Title = "Products", Version = "v1" }); });
+builder.Services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo { Title = "Orders", Version = "v1" }); });
 
 var app = builder.Build();
 
@@ -29,7 +32,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI(c => {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Products");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Orders");
     });
 }
 

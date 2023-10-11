@@ -1,13 +1,16 @@
 ﻿using GeekBurger.Products.Contract.Model;
+using GeekBurger.Products.Contract.Service;
 
 namespace GeekBurger.Products.Contract.Repository
 {
     public class OrdersRepository : IOrderRepository
     {
         private ProductsDbContext _context;
-        public OrdersRepository(ProductsDbContext context)
+        private IOrderChangedService _orderChangedService;
+        public OrdersRepository(ProductsDbContext context, IOrderChangedService orderChangedService)
         {
             _context = context;
+            _orderChangedService = orderChangedService;
         }
         public bool Add(Order order)
 
@@ -23,7 +26,12 @@ namespace GeekBurger.Products.Contract.Repository
         }
         public void Save()
         {
+            var lista = _context.ChangeTracker.Entries<Order>();
+            _orderChangedService
+                .AddToMessageList(lista);
             _context.SaveChanges();
+            _orderChangedService.SendMessagesAsync();
+
         }
     }
 }

@@ -16,4 +16,6 @@ public class ProductsDbContext : DbContext
     public DbSet<Order> Orders { get; set; }
     public DbSet<ProductOrder> ProductOrders { get; set; }
     public DbSet<Payment> Payments { get; set; }
+    public DbSet<OrderChangedEvent> OrderChangedEvents { get; set; }
+
 }
