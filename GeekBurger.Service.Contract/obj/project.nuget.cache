@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BpPLgR98vV/1vYqmZJbqH5vBLVfQD6oiKOrC3sspr0H8AHT2HhCaI7+72HgEBkFLFW4lp8LBVFyqlouP6uPAPg==",
+  "dgSpecHash": "IcmdDOPVa3+sI9Xy8j55WSNE/Gc1A9V3SBGjVEemQ1bOjZc05m4Jfh+TekCfq7nDV8uhfxISZKqEVOHrlmTLgw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Arquitetura_Integracao_Microsservicos\\GeekBurger\\GeekBurger.Service.Contract\\GeekBurger.Service.Contract.csproj",
   "expectedPackageFiles": [],

@@ -13,6 +13,7 @@ namespace GeekBurger.Products.Contract.Model
         public Guid OrderId { get; set; }
         [ForeignKey("StoreId")]
         public Store Store { get; set; }
+        public OrderState? OrderState { get; set; }
         public Guid StoreId { get; set; }
         public List<ProductOrder> Products { get; set; } = new List<ProductOrder>();
     }

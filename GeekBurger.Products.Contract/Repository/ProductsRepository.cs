@@ -42,9 +42,9 @@ namespace GeekBurger.Products.Contract.Repository
         {
             return _context.Products.Where(p => p.ProductId == id).FirstOrDefault();
         }
-        public IEnumerable<Ingredient> GetFullListOfItems()
+        public IEnumerable<Ingredient> GetFullListOfIngredients()
         {
-            return _context.Items.ToList();
+            return _context.Ingredients.ToList();
         }
         public IEnumerable<Product> GetProductsByRestrictions(List<FoodCharacteristics> restrictions)
         {

@@ -19,6 +19,7 @@ namespace GeekBurger.Products.Contract.Service
     {
         private const string MicroService = "Products";
         private const string Topic = "Log";
+        private const string Queue = "myqueue";
         private IConfiguration _configuration;
         private IMapper _mapper;
         private List<ServiceBusMessage> _messages;

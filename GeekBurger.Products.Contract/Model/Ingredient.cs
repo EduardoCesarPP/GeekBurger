@@ -15,7 +15,7 @@ namespace GeekBurger.Products.Contract.Model
         public Product Product { get; set; }
         public Guid ProductId { get; set; }
         [Key]
-        public Guid ItemId { get; set; }
+        public Guid IngredientId { get; set; }
         public string Name { get; set; }
         public List<Allergen> Allergens { get; set; } = new List<Allergen>();
     }

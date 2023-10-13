@@ -12,6 +12,6 @@ namespace GeekBurger.Service.Contract
         public string Name { get; set; }
         public string Image { get; set; }
         public decimal Price { get; set; }
-        public List<ItemToUpsert> Ingredients { get; set; }
+        public List<IngredientToUpsert> Ingredients { get; set; }
     }
 }

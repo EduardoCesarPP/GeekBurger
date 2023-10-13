@@ -7,22 +7,22 @@ using GeekBurger.Service.Contract;
 
 namespace GeekBurger.Products.Helper
 {
-    public class MatchItemsFromRepository : IMappingAction<ItemToUpsert, Ingredient>
+    public class MatchIngredientsFromRepository : IMappingAction<IngredientToUpsert, Ingredient>
     {
         private IProductsRepository _productRepository;
-        public MatchItemsFromRepository(IProductsRepository productRepository)
+        public MatchIngredientsFromRepository(IProductsRepository productRepository)
         {
             _productRepository = productRepository;
         }
 
-        public void Process(ItemToUpsert source, Ingredient destination, ResolutionContext context)
+        public void Process(IngredientToUpsert source, Ingredient destination, ResolutionContext context)
         {
-            var fullListOfItems = _productRepository.GetFullListOfItems();
-            var itemFound = fullListOfItems?.FirstOrDefault(item => item.Name.Equals(source.Name, StringComparison.InvariantCultureIgnoreCase));
-            if (itemFound != null)
-                destination.ItemId = itemFound.ItemId;
+            var fullListOfIngredients = _productRepository.GetFullListOfIngredients();
+            var IngredientFound = fullListOfIngredients?.FirstOrDefault(Ingredient => Ingredient.Name.Equals(source.Name, StringComparison.InvariantCultureIgnoreCase));
+            if (IngredientFound != null)
+                destination.IngredientId = IngredientFound.IngredientId;
             else
-                destination.ItemId = Guid.NewGuid();
+                destination.IngredientId = Guid.NewGuid();
         }
     }
 }

@@ -8,7 +8,7 @@ public interface IProductsRepository
     public bool Add(Product product);
     public void Save();
     public Product GetProductById(Guid id);
-    public IEnumerable<Ingredient> GetFullListOfItems();
+    public IEnumerable<Ingredient> GetFullListOfIngredients();
     public IEnumerable<Product> GetProductsByRestrictions(List<FoodCharacteristics> restrictions);
 }
 

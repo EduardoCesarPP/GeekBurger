@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Arquitetura_Integracao_Microsservicos\\GeekBurger\\GeekBurger.Products.Contract\\GeekBurger.Products.Contract.csproj": {
-      "version": "2.1.6",
+      "version": "2.1.7",
       "restore": {
         "projectUniqueName": "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Arquitetura_Integracao_Microsservicos\\GeekBurger\\GeekBurger.Products.Contract\\GeekBurger.Products.Contract.csproj",
         "projectName": "GeekBurger.Products.Contract",
@@ -93,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.122\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.123\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -152,7 +152,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.122\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.123\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DA5FIuB8Tz6D+YYiGWyfmhbBQTxaoC3O2Q5piWZm54pErWROkctxeWHiKgBbDYZQ01/uyk+8VM8pub/IcmfxeA==",
+  "dgSpecHash": "f3mJmhuWsiXAQIBWlSvBAfZTrlxGR9Htu1P1B6gpTIvdIz1OF535sZdt/SqKztO9dWtNvHQMmxT38W31w3Vw1w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Arquitetura_Integracao_Microsservicos\\GeekBurger\\GeekBurger.Order\\GeekBurger.Order.csproj",
   "expectedPackageFiles": [
@@ -42,8 +42,7 @@
     "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
     "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
-    "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\geekburger.products.contract\\2.1.6\\geekburger.products.contract.2.1.6.nupkg.sha512"
+    "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }

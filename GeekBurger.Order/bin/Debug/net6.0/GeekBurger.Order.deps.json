@@ -10,7 +10,7 @@
         "dependencies": {
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
-          "GeekBurger.Products.Contract": "2.1.6",
+          "GeekBurger.Products.Contract": "2.1.7",
           "GeekBurger.Service.Contract": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.11",
           "Microsoft.EntityFrameworkCore.InMemory": "7.0.11",
@@ -361,7 +361,7 @@
       "System.Text.Encodings.Web/4.7.2": {},
       "System.Text.Json/4.7.2": {},
       "System.Threading.Tasks.Extensions/4.5.4": {},
-      "GeekBurger.Products.Contract/2.1.6": {
+      "GeekBurger.Products.Contract/2.1.7": {
         "dependencies": {
           "AutoMapper": "12.0.1",
           "Azure.Messaging.ServiceBus": "7.16.1",
@@ -662,7 +662,7 @@
       "path": "system.threading.tasks.extensions/4.5.4",
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
     },
-    "GeekBurger.Products.Contract/2.1.6": {
+    "GeekBurger.Products.Contract/2.1.7": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

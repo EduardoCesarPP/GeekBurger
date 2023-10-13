@@ -500,7 +500,24 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
-      "GeekBurger.Products.Contract/2.1.6": {
+      "GeekBurger.Production.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "Azure.Messaging.ServiceBus": "7.16.1",
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "7.0.4",
+          "Microsoft.Extensions.Hosting.Abstractions": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GeekBurger.Production.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeekBurger.Production.Contract.dll": {}
+        }
+      },
+      "GeekBurger.Products.Contract/2.1.7": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -1757,7 +1774,12 @@
         "version.txt"
       ]
     },
-    "GeekBurger.Products.Contract/2.1.6": {
+    "GeekBurger.Production.Contract/1.0.0": {
+      "type": "project",
+      "path": "../GeekBurger.Production.Contract/GeekBurger.Production.Contract.csproj",
+      "msbuildProject": "../GeekBurger.Production.Contract/GeekBurger.Production.Contract.csproj"
+    },
+    "GeekBurger.Products.Contract/2.1.7": {
       "type": "project",
       "path": "../GeekBurger.Products.Contract/GeekBurger.Products.Contract.csproj",
       "msbuildProject": "../GeekBurger.Products.Contract/GeekBurger.Products.Contract.csproj"
@@ -1772,7 +1794,8 @@
     "net6.0": [
       "AutoMapper >= 12.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
-      "GeekBurger.Products.Contract >= 2.1.6",
+      "GeekBurger.Production.Contract >= 1.0.0",
+      "GeekBurger.Products.Contract >= 2.1.7",
       "GeekBurger.Service.Contract >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.11",
       "Microsoft.EntityFrameworkCore.InMemory >= 7.0.11",
@@ -1813,6 +1836,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Arquitetura_Integracao_Microsservicos\\GeekBurger\\GeekBurger.Production.Contract\\GeekBurger.Production.Contract.csproj": {
+              "projectPath": "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Arquitetura_Integracao_Microsservicos\\GeekBurger\\GeekBurger.Production.Contract\\GeekBurger.Production.Contract.csproj"
+            },
             "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Arquitetura_Integracao_Microsservicos\\GeekBurger\\GeekBurger.Products.Contract\\GeekBurger.Products.Contract.csproj": {
               "projectPath": "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Arquitetura_Integracao_Microsservicos\\GeekBurger\\GeekBurger.Products.Contract\\GeekBurger.Products.Contract.csproj"
             },
@@ -1875,7 +1901,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.122\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.123\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "GeekBurger.Products.Contract/2.1.6": {
+      "GeekBurger.Products.Contract/2.1.7": {
         "dependencies": {
           "AutoMapper": "12.0.1",
           "Azure.Messaging.ServiceBus": "7.16.1",
@@ -310,7 +310,7 @@
     }
   },
   "libraries": {
-    "GeekBurger.Products.Contract/2.1.6": {
+    "GeekBurger.Products.Contract/2.1.7": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

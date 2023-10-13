@@ -12,7 +12,7 @@ public class ProductsDbContext : DbContext
     public DbSet<FoodRestrictions> FoodRestrictions { get; set; }
     public DbSet<User> Users { get; set; }
     public DbSet<Store> Stores { get; set; }
-    public DbSet<Ingredient> Items { get; set; }
+    public DbSet<Ingredient> Ingredients { get; set; }
     public DbSet<Order> Orders { get; set; }
     public DbSet<ProductOrder> ProductOrders { get; set; }
     public DbSet<Payment> Payments { get; set; }

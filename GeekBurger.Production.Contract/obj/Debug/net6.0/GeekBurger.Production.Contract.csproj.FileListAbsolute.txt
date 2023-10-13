@@ -1,0 +1,12 @@
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production.Contract\bin\Debug\net6.0\GeekBurger.Production.Contract.deps.json
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production.Contract\bin\Debug\net6.0\GeekBurger.Production.Contract.dll
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production.Contract\bin\Debug\net6.0\ref\GeekBurger.Production.Contract.dll
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production.Contract\bin\Debug\net6.0\GeekBurger.Production.Contract.pdb
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production.Contract\obj\Debug\net6.0\GeekBurger.Production.Contract.csproj.AssemblyReference.cache
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production.Contract\obj\Debug\net6.0\GeekBurger.Production.Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production.Contract\obj\Debug\net6.0\GeekBurger.Production.Contract.AssemblyInfoInputs.cache
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production.Contract\obj\Debug\net6.0\GeekBurger.Production.Contract.AssemblyInfo.cs
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production.Contract\obj\Debug\net6.0\GeekBurger.Production.Contract.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production.Contract\obj\Debug\net6.0\GeekBurger.Production.Contract.dll
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production.Contract\obj\Debug\net6.0\ref\GeekBurger.Production.Contract.dll
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production.Contract\obj\Debug\net6.0\GeekBurger.Production.Contract.pdb

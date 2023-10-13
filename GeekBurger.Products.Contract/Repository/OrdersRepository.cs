@@ -26,11 +26,11 @@ namespace GeekBurger.Products.Contract.Repository
         }
         public void Save()
         {
-            var lista = _context.ChangeTracker.Entries<Order>();
-            _orderChangedService
-                .AddToMessageList(lista);
+            //var lista = _context.ChangeTracker.Entries<Order>();
+            //_orderChangedService
+            //    .AddToMessageList(lista);
             _context.SaveChanges();
-            _orderChangedService.SendMessagesAsync();
+            //_orderChangedService.SendMessagesAsync();
 
         }
     }

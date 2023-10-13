@@ -75,25 +75,6 @@
           "lib/netstandard2.0/Azure.Messaging.ServiceBus.dll": {}
         }
       },
-      "GeekBurger.Products.Contract/2.1.6": {
-        "type": "package",
-        "dependencies": {
-          "AutoMapper": "12.0.1",
-          "Azure.Messaging.ServiceBus": "7.16.1",
-          "GeekBurger.Service.Contract": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "7.0.11",
-          "Microsoft.EntityFrameworkCore.InMemory": "7.0.11",
-          "Microsoft.Extensions.Configuration.Binder": "7.0.4",
-          "Microsoft.Extensions.Hosting.Abstractions": "7.0.0",
-          "Newtonsoft.Json": "13.0.3"
-        },
-        "compile": {
-          "lib/net6.0/GeekBurger.Products.Contract.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0/GeekBurger.Products.Contract.dll": {}
-        }
-      },
       "Microsoft.Azure.Amqp/2.6.2": {
         "type": "package",
         "compile": {
@@ -121,11 +102,11 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore/7.0.11": {
+      "Microsoft.EntityFrameworkCore/7.0.12": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.11",
-          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.11",
+          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.12",
+          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.12",
           "Microsoft.Extensions.Caching.Memory": "7.0.0",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Microsoft.Extensions.Logging": "7.0.0"
@@ -140,7 +121,7 @@
           "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/7.0.11": {
+      "Microsoft.EntityFrameworkCore.Abstractions/7.0.12": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
@@ -149,7 +130,7 @@
           "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/7.0.11": {
+      "Microsoft.EntityFrameworkCore.Analyzers/7.0.12": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -158,10 +139,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.InMemory/7.0.11": {
+      "Microsoft.EntityFrameworkCore.InMemory/7.0.12": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.11"
+          "Microsoft.EntityFrameworkCore": "7.0.12"
         },
         "compile": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {}
@@ -519,6 +500,26 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
+      "GeekBurger.Products.Contract/2.1.7": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "Azure.Messaging.ServiceBus": "7.16.1",
+          "GeekBurger.Service.Contract": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.11",
+          "Microsoft.EntityFrameworkCore.InMemory": "7.0.11",
+          "Microsoft.Extensions.Configuration.Binder": "7.0.4",
+          "Microsoft.Extensions.Hosting.Abstractions": "7.0.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "bin/placeholder/GeekBurger.Products.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeekBurger.Products.Contract.dll": {}
+        }
+      },
       "GeekBurger.Service.Contract/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -527,6 +528,26 @@
         },
         "runtime": {
           "bin/placeholder/GeekBurger.Service.Contract.dll": {}
+        }
+      },
+      "GeekBurger.StoreCatalog.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "Azure.Messaging.ServiceBus": "7.16.1",
+          "GeekBurger.Products.Contract": "2.1.7",
+          "Microsoft.EntityFrameworkCore": "7.0.12",
+          "Microsoft.EntityFrameworkCore.InMemory": "7.0.12",
+          "Microsoft.Extensions.Configuration.Binder": "7.0.4",
+          "Microsoft.Extensions.Hosting.Abstractions": "7.0.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "bin/placeholder/GeekBurger.StoreCatalog.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeekBurger.StoreCatalog.Contract.dll": {}
         }
       }
     }
@@ -615,17 +636,6 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Messaging.ServiceBus.dll",
         "lib/netstandard2.0/Azure.Messaging.ServiceBus.xml"
-      ]
-    },
-    "GeekBurger.Products.Contract/2.1.6": {
-      "sha512": "PNBbtudXgkki9CRYRvEnG5J9LH/FEdOmS0ISO2XZQO7xmLj4R2BOxxNoahtTK5z3CtHWamlW2nnIGBkRVWnVJg==",
-      "type": "package",
-      "path": "geekburger.products.contract/2.1.6",
-      "files": [
-        ".nupkg.metadata",
-        "geekburger.products.contract.2.1.6.nupkg.sha512",
-        "geekburger.products.contract.nuspec",
-        "lib/net6.0/GeekBurger.Products.Contract.dll"
       ]
     },
     "Microsoft.Azure.Amqp/2.6.2": {
@@ -744,10 +754,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.EntityFrameworkCore/7.0.11": {
-      "sha512": "r7YGITjQ7v1hYtUXIavjSx+T1itKVPUFAIBN7HaKNjbR8x+gep8w9H3NEchglJOh1woZR4b2MhbSo2YFRZwZDg==",
+    "Microsoft.EntityFrameworkCore/7.0.12": {
+      "sha512": "HRge/bJ5SKMNeqybC4NnRwWZn69QBjVVoVmwhmJ8xgQ50Ye+jTOOf2mef/y4Lrq1HUeMg8cu+3JeFdnp+Y8skA==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/7.0.11",
+      "path": "microsoft.entityframeworkcore/7.0.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -755,49 +765,49 @@
         "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props",
         "lib/net6.0/Microsoft.EntityFrameworkCore.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
+        "microsoft.entityframeworkcore.7.0.12.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/7.0.11": {
-      "sha512": "IoOnhycZ0/VtLowf0HgB0cujxwksokzkS3/5108AHOcbntHUTqwxtCjG4E4FCly/45G+mxb+4PxBdFZhA49lwQ==",
+    "Microsoft.EntityFrameworkCore.Abstractions/7.0.12": {
+      "sha512": "GDlY3DzUbpagqb0683NUM2RK9eJFjTfmlLJd5YtvzBf8T4dwanIOSjd2vN7dXJihyZ0JlYaCetyHgxzbrxiUOw==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/7.0.11",
+      "path": "microsoft.entityframeworkcore.abstractions/7.0.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.7.0.12.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/7.0.11": {
-      "sha512": "Qexum5safSSfijx6P1QSq5bVJPPTM/uf7lQmpL/shkiozEC/0FzqNaVUfFpbNN8zsO1jMFYbeDMF4cxJMlTT9w==",
+    "Microsoft.EntityFrameworkCore.Analyzers/7.0.12": {
+      "sha512": "feFe61uKUNoHJfo9tnO65BTzcpWEYIr34xWikhYgZl5c9RiiUJLuCoTqoGc9fuuKy+xk9aUa1NwgDGMC4KmBig==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/7.0.11",
+      "path": "microsoft.entityframeworkcore.analyzers/7.0.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.7.0.11.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.7.0.12.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.InMemory/7.0.11": {
-      "sha512": "Wc0YniYccjbzg8URydo3zbVUR0NLdvpIPU5qO0Vyvtl2Ty7fFmD6/RfbESjdcnszgiGt417OZiwmiiC+w3hmTA==",
+    "Microsoft.EntityFrameworkCore.InMemory/7.0.12": {
+      "sha512": "Tdrvt7y1OKmyPjyzFlYeLnoe0zI78ypWlG87ck5cIYYVnst60fklbrVGxUMXdkwPiYmnGVIUL5H0lfh+dFwD1Q==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.inmemory/7.0.11",
+      "path": "microsoft.entityframeworkcore.inmemory/7.0.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.xml",
-        "microsoft.entityframeworkcore.inmemory.7.0.11.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.7.0.12.nupkg.sha512",
         "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
@@ -1767,20 +1777,30 @@
         "version.txt"
       ]
     },
+    "GeekBurger.Products.Contract/2.1.7": {
+      "type": "project",
+      "path": "../GeekBurger.Products.Contract/GeekBurger.Products.Contract.csproj",
+      "msbuildProject": "../GeekBurger.Products.Contract/GeekBurger.Products.Contract.csproj"
+    },
     "GeekBurger.Service.Contract/1.0.0": {
       "type": "project",
       "path": "../GeekBurger.Service.Contract/GeekBurger.Service.Contract.csproj",
       "msbuildProject": "../GeekBurger.Service.Contract/GeekBurger.Service.Contract.csproj"
+    },
+    "GeekBurger.StoreCatalog.Contract/1.0.0": {
+      "type": "project",
+      "path": "../GeekBurger.StoreCatalog.Contract/GeekBurger.StoreCatalog.Contract.csproj",
+      "msbuildProject": "../GeekBurger.StoreCatalog.Contract/GeekBurger.StoreCatalog.Contract.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper >= 12.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
-      "GeekBurger.Products.Contract >= 2.1.6",
       "GeekBurger.Service.Contract >= 1.0.0",
-      "Microsoft.EntityFrameworkCore >= 7.0.11",
-      "Microsoft.EntityFrameworkCore.InMemory >= 7.0.11",
+      "GeekBurger.StoreCatalog.Contract >= 1.0.0",
+      "Microsoft.EntityFrameworkCore >= 7.0.12",
+      "Microsoft.EntityFrameworkCore.InMemory >= 7.0.12",
       "Swashbuckle.AspNetCore >= 6.5.0",
       "Swashbuckle.AspNetCore.Swagger >= 6.5.0"
     ]
@@ -1820,6 +1840,9 @@
           "projectReferences": {
             "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Arquitetura_Integracao_Microsservicos\\GeekBurger\\GeekBurger.Service.Contract\\GeekBurger.Service.Contract.csproj": {
               "projectPath": "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Arquitetura_Integracao_Microsservicos\\GeekBurger\\GeekBurger.Service.Contract\\GeekBurger.Service.Contract.csproj"
+            },
+            "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Arquitetura_Integracao_Microsservicos\\GeekBurger\\GeekBurger.StoreCatalog.Contract\\GeekBurger.StoreCatalog.Contract.csproj": {
+              "projectPath": "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Arquitetura_Integracao_Microsservicos\\GeekBurger\\GeekBurger.StoreCatalog.Contract\\GeekBurger.StoreCatalog.Contract.csproj"
             }
           }
         }
@@ -1842,17 +1865,13 @@
             "target": "Package",
             "version": "[12.0.1, )"
           },
-          "GeekBurger.Products.Contract": {
-            "target": "Package",
-            "version": "[2.1.6, )"
-          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
-            "version": "[7.0.11, )"
+            "version": "[7.0.12, )"
           },
           "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
-            "version": "[7.0.11, )"
+            "version": "[7.0.12, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
@@ -1881,7 +1900,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.122\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.123\\RuntimeIdentifierGraph.json"
       }
     }
   }

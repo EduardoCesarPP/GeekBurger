@@ -1,6 +1,6 @@
 ﻿namespace GeekBurger.Service.Contract
 {
-    public class ItemToUpsert
+    public class IngredientToUpsert
     {
         public string Name { get; set; }
     }

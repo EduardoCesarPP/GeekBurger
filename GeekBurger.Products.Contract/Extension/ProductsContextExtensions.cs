@@ -4,7 +4,7 @@ public static class ProductsContextExtensions
 {
     public static void Seed(this ProductsDbContext context)
     {
-        context.Items.RemoveRange(context.Items);
+        context.Ingredients.RemoveRange(context.Ingredients);
         context.Products.RemoveRange(context.Products);
         context.Stores.RemoveRange(context.Stores);
         context.SaveChanges();
@@ -31,42 +31,42 @@ public static class ProductsContextExtensions
         //    });
         //context.SaveChanges();
 
-        //context.Items.AddRange(
+        //context.Ingredients.AddRange(
 
         //   new List<Ingredient> {
-        //        new Ingredient {  Name ="Beef",    ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Bread",   ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000002"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Ketchup", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000003"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Pork", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod2")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod2")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod2")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
-        //        new Ingredient {  Name ="Darth Bacon", ItemId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Beef",    IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Bread",   IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000002"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Ketchup", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000003"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Pork", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod2")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod2")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod2")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
+        //        new Ingredient {  Name ="Darth Bacon", IngredientId = new Guid("8048e9ec-80fe-4bad-bc2a-ing000000001"), ProductId = new Guid("8048e9ec-80fe-4bad-bc2a-e4f4a75prod1")},
         //   });
         //context.SaveChanges();
 

@@ -30,7 +30,7 @@ namespace GeekBurger.Products.Contract.Service
         private CancellationTokenSource _cancelMessages;
         private IServiceProvider _serviceProvider { get; }
 
-        public OrderChangedService(IMapper mapper, 
+        public OrderChangedService(IMapper mapper,
             IConfiguration configuration, ILogService logService, IServiceProvider serviceProvider)
         {
             _mapper = mapper;
@@ -91,6 +91,10 @@ namespace GeekBurger.Products.Contract.Service
         public ServiceBusMessage GetMessage(EntityEntry<Order> entity)
         {
             var OrderChanged = _mapper.Map<OrderChangedMessage>(entity);
+
+            //var OrderChanged = new OrderChangedMessage { Order = _mapper.Map<OrderToGet>(entity.Entity), State = OrderState.Paid };
+
+
             var OrderChangedSerialized = JsonConvert.SerializeObject(OrderChanged);
             var OrderChangedBinaryData = new BinaryData(Encoding.UTF8.GetBytes(OrderChangedSerialized));
 
@@ -102,7 +106,7 @@ namespace GeekBurger.Products.Contract.Service
                 Body = OrderChangedBinaryData,
                 MessageId = OrderChangedEvent.EventId.ToString(),
                 Subject = OrderChanged.Order.StoreId.ToString(),
-                    
+
             };
         }
 
@@ -126,7 +130,7 @@ namespace GeekBurger.Products.Contract.Service
             HandleException(closeTask);
         }
 
-        public async Task SendAsync(ServiceBusSender topicSender, 
+        public async Task SendAsync(ServiceBusSender topicSender,
             CancellationToken cancellationToken)
         {
             var tries = 0;
@@ -153,7 +157,7 @@ namespace GeekBurger.Products.Contract.Service
                 else
                 {
                     if (message == null) continue;
-                    AddOrUpdateEvent(new OrderChangedEvent() {EventId = new Guid(message.MessageId)});
+                    AddOrUpdateEvent(new OrderChangedEvent() { EventId = new Guid(message.MessageId) });
                     _messages.Remove(message);
                 }
             }
@@ -177,7 +181,7 @@ namespace GeekBurger.Products.Contract.Service
         public Task StartAsync(CancellationToken cancellationToken)
         {
             EnsureTopicIsCreated();
-            
+
             return Task.CompletedTask;
         }
 

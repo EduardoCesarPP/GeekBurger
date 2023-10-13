@@ -4,9 +4,9 @@ namespace GeekBurger.Products.Contract.Model
 {
     public class Allergen
     {
-        [ForeignKey("ItemId")]
+        [ForeignKey("IngredientId")]
         [Key]
-        public Guid ItemId { get; set; }
+        public Guid IngredientId { get; set; }
         public Ingredient Ingredient { get; set; }
         public FoodCharacteristics Characteristic { get; set; }
     }
