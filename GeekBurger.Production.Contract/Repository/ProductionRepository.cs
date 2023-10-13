@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 
 using GeekBurger.Production.Contract.Service;
+using GeekBurger.Products.Contract.Model;
+using GeekBurger.Service.Contract;
 using System.Text;
 
 namespace GeekBurger.Production.Contract.Repository
@@ -15,6 +17,14 @@ namespace GeekBurger.Production.Contract.Repository
             _mapper = mapper;
         }
 
-        
+        public async Task<List<OrderToGet>> CheckOrderChanges()
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<List<OrderToGet>> CheckOrders()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

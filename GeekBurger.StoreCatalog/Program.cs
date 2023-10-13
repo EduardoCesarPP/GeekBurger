@@ -15,7 +15,6 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ProductsDbContext>(o => o.UseInMemoryDatabase("geekburger-products"));
 builder.Services.AddScoped<IUsersRepository, UsersRepository>();
-builder.Services.AddScoped<ILogService, LogService>();
 builder.Services.AddScoped<IStoreCatalogService, StoreCatalogService>();
 builder.Services.AddScoped<IStoreCatalogRepository, StoreCatalogRepository>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());

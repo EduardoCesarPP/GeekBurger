@@ -26,7 +26,6 @@ C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservi
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Service.Contract\bin\Debug\net6.0\GeekBurger.Service.Contract.dll
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Service.Contract\bin\Debug\net6.0\ref\GeekBurger.Service.Contract.dll
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Service.Contract\bin\Debug\net6.0\GeekBurger.Service.Contract.pdb
-C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\GeekBurger.Service.Contract.csproj.AssemblyReference.cache
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\GeekBurger.Service.Contract.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\GeekBurger.Service.Contract.AssemblyInfoInputs.cache
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Service.Contract\obj\Debug\net6.0\GeekBurger.Service.Contract.AssemblyInfo.cs
