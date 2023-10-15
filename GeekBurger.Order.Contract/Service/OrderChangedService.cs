@@ -17,7 +17,7 @@ namespace GeekBurger.Products.Contract.Service
     public class OrderChangedService : IOrderChangedService
     {
         private const string Fila = "OrderResults";
-        private const string FilaNovasOrdens = "newOrderProduction";
+        private const string FilaNovasOrdens = "newOrder";
         private readonly IConfiguration _configuration;
         private IMapper _mapper;
         private readonly List<ServiceBusMessage> _messages;
