@@ -1,6 +1,4 @@
 ﻿using AutoMapper;
-using GeekBurger.Products.Contract;
-using GeekBurger.Products.Contract.Model;
 using GeekBurger.Service.Contract;
 using Microsoft.AspNetCore.Mvc;
 

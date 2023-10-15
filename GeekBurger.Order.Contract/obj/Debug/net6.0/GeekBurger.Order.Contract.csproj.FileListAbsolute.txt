@@ -1,0 +1,17 @@
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Order.Contract\bin\Debug\net6.0\GeekBurger.Order.Contract.deps.json
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Order.Contract\bin\Debug\net6.0\GeekBurger.Order.Contract.dll
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Order.Contract\bin\Debug\net6.0\ref\GeekBurger.Order.Contract.dll
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Order.Contract\bin\Debug\net6.0\GeekBurger.Order.Contract.pdb
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Order.Contract\bin\Debug\net6.0\GeekBurger.Service.Contract.dll
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Order.Contract\bin\Debug\net6.0\GeekBurger.Shared.dll
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Order.Contract\bin\Debug\net6.0\GeekBurger.Service.Contract.pdb
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Order.Contract\bin\Debug\net6.0\GeekBurger.Shared.pdb
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Order.Contract\obj\Debug\net6.0\GeekBurger.Order.Contract.csproj.AssemblyReference.cache
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Order.Contract\obj\Debug\net6.0\GeekBurger.Order.Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Order.Contract\obj\Debug\net6.0\GeekBurger.Order.Contract.AssemblyInfoInputs.cache
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Order.Contract\obj\Debug\net6.0\GeekBurger.Order.Contract.AssemblyInfo.cs
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Order.Contract\obj\Debug\net6.0\GeekBurger.Order.Contract.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Order.Contract\obj\Debug\net6.0\GeekBurger.Order.Contract.csproj.CopyComplete
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Order.Contract\obj\Debug\net6.0\GeekBurger.Order.Contract.dll
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Order.Contract\obj\Debug\net6.0\ref\GeekBurger.Order.Contract.dll
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Order.Contract\obj\Debug\net6.0\GeekBurger.Order.Contract.pdb

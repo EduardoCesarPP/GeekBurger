@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using GeekBurger.Products.Contract.Model;
+
 using GeekBurger.Products.Contract.Repository;
 using GeekBurger.Service.Contract;
 using Microsoft.AspNetCore.Mvc;

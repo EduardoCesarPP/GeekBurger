@@ -1,8 +1,20 @@
 ﻿namespace GeekBurger.Service.Contract
 {
-    public class ItemToGet
+    public class IngredientToGet
     {
-        public Guid ItemId { get; set; }
+        public Guid IngredientId { get; set; }
         public string Name { get; set; }
+        public List<AllergenToGet> Allergens { get; set; } = new List<AllergenToGet>();
+    }
+
+    public class AllergenToGet
+    {
+        public FoodCharacteristicsToGet Characteristic { get; set; }
+    }
+
+    public class FoodCharacteristicsToGet
+    {
+        public string Name { get; set; }
+
     }
 }

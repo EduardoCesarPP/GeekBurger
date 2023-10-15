@@ -1,4 +1,9 @@
-using GeekBurger.Products.Contract.Repository;
+global using GeekBurger.Shared;
+global using GeekBurger.Shared.Extensions;
+global using GeekBurger.Shared.Model;
+using GeekBurger.Shared.ExternalRepositories;
+using GeekBurger.StoreCatalogs.Contract.Repository;
+using GeekBurger.StoreCatalogs.Contract.Service;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
@@ -12,12 +17,14 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ProductsDbContext>(o => o.UseInMemoryDatabase("geekburger-products"));
-builder.Services.AddScoped<IUsersRepository, UsersRepository>();
+builder.Services.AddScoped<IStoreRepository, StoresRepository>();
 builder.Services.AddScoped<IProductsRepository, ProductsRepository>();
+builder.Services.AddScoped<IStoreCatalogService, StoreCatalogService>();
+builder.Services.AddScoped<IStoreCatalogRepository, StoreCatalogRepository>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var mvcCoreBuilder = builder.Services.AddMvc();
-builder.Services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo { Title = "Products", Version = "v1" }); });
+builder.Services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo { Title = "Store Catalogs", Version = "v1" }); });
 
 var app = builder.Build();
 
@@ -28,7 +35,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI(c => {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Products");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Store Catalogs");
     });
 }
 

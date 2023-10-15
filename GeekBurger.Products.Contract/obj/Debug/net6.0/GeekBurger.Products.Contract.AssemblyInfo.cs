@@ -13,11 +13,11 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("GeekBurger.Products.Contract")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("2.1.5.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.1.5")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("2.1.7.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.1.7")]
 [assembly: System.Reflection.AssemblyProductAttribute("GeekBurger.Products.Contract")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GeekBurger.Products.Contract")]
-[assembly: System.Reflection.AssemblyVersionAttribute("2.1.5.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("2.1.7.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
 

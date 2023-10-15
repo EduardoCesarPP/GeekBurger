@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
-using GeekBurger.Products.Contract.Repository;
+
 using GeekBurger.Service.Contract;
+using GeekBurger.StoreCatalogs.Contract.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 [Route("api/storecatalog")]
@@ -8,28 +9,28 @@ using Microsoft.AspNetCore.Mvc;
 public class StoreCatalogController : Controller
 {
 
-    private IProductsRepository _productRepository;
-    private IUsersRepository _usersRepository;
+    private IStoreCatalogRepository _storeCatalogRepository;
 
     private IMapper _mapper;
 
-    public StoreCatalogController(IProductsRepository productRepository, IUsersRepository usersRepository, IMapper mapper)
-
+    public StoreCatalogController(IMapper mapper, IStoreCatalogRepository storeCatalogRepository)
     {
-        _usersRepository = usersRepository;
-        _productRepository = productRepository;
         _mapper = mapper;
+        _storeCatalogRepository = storeCatalogRepository;
     }
 
     [HttpGet()]
-    public IActionResult GetProductsByStoreName([FromQuery] string cpf)
+    public async Task<IActionResult> GetStoreCatalog([FromQuery] string storeName, [FromQuery] string cpf)
     {
-        var restrictions = _usersRepository.GetRestrictions(cpf).ToList();
-        var products = _productRepository.GetProductsByRestrictions(restrictions).ToList();
-        if (products.Count <= 0)
-            return NotFound("Nenhum dado encontrado");
-        var productsToGet = _mapper.Map<IEnumerable<StoreCatalog>>(products);
-        return Ok(productsToGet);
+        var acceptableProducts = _mapper.Map<List<ProductToGet>>(await _storeCatalogRepository.CarregarCatalogo(storeName, cpf));
+        return Ok(acceptableProducts);
+    }
+
+
+    [HttpPost()]
+    public async Task<IActionResult> Teste([FromBody] OrderToUpsert storeName)
+    {
+        return Ok();
     }
 
 

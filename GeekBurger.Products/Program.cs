@@ -1,6 +1,10 @@
-using GeekBurger.Products.Contract.Repository;
+global using GeekBurger.Shared;
+global using GeekBurger.Shared.Model;
+global using GeekBurger.Shared.ExternalRepositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using GeekBurger.Shared.Extensions;
+using GeekBurger.Shared.ExternalRepositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
