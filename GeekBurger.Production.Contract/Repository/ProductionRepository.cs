@@ -1,30 +1,30 @@
 ﻿using AutoMapper;
-
+using GeekBurger.Shared.Model;
 using GeekBurger.Production.Contract.Service;
-using GeekBurger.Products.Contract.Model;
 using GeekBurger.Service.Contract;
-using System.Text;
+using Newtonsoft.Json;
 
 namespace GeekBurger.Production.Contract.Repository
 {
     public class ProductionRepository : IProductionRepository
     {
-        private IMapper _mapper;
         private IProductionService _productionService;
-        public ProductionRepository(IProductionService productionervice, IMapper mapper)
+        public ProductionRepository(IProductionService productionervice)
         {
             _productionService = productionervice;
-            _mapper = mapper;
         }
 
-        public async Task<List<OrderToGet>> CheckOrderChanges()
+        public async Task<List<OrderChange>> CheckOrderChanges()
         {
-            throw new NotImplementedException();
+            var orders = JsonConvert.DeserializeObject<List<OrderChange>>(await _productionService.CheckOrderChanges());
+            return orders;
         }
 
-        public async Task<List<OrderToGet>> CheckOrders()
+        public async Task<List<OrderToUpsert>> CheckNewOrders()
         {
-            throw new NotImplementedException();
+            var orders = JsonConvert.DeserializeObject<List<OrderToUpsert>>(await _productionService.CheckNewOrders());
+            return orders;
         }
+
     }
 }

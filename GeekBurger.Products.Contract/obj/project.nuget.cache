@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GngYkP1NuqnunW+fPygTAi2WcOGDhNYAudLaRhgI+mvaH8e8or6d82PoxNOiHFPBMKXeojHs+fckES/+KvIZ+g==",
+  "dgSpecHash": "A+1GNZZkk2zHxIWXQqrP18EeEtUDNkl2iN4Oekr8gQXnWDGm56PHOS3mZzerFDSo2Fyqtcx7gyL77oJM+jc4eg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Arquitetura_Integracao_Microsservicos\\GeekBurger\\GeekBurger.Products.Contract\\GeekBurger.Products.Contract.csproj",
   "expectedPackageFiles": [
@@ -11,10 +11,10 @@
     "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\microsoft.azure.amqp\\2.6.2\\microsoft.azure.amqp.2.6.2.nupkg.sha512",
     "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
-    "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.11\\microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",
-    "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.11\\microsoft.entityframeworkcore.analyzers.7.0.11.nupkg.sha512",
-    "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\7.0.11\\microsoft.entityframeworkcore.inmemory.7.0.11.nupkg.sha512",
+    "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.12\\microsoft.entityframeworkcore.7.0.12.nupkg.sha512",
+    "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.12\\microsoft.entityframeworkcore.abstractions.7.0.12.nupkg.sha512",
+    "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.12\\microsoft.entityframeworkcore.analyzers.7.0.12.nupkg.sha512",
+    "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\7.0.12\\microsoft.entityframeworkcore.inmemory.7.0.12.nupkg.sha512",
     "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using GeekBurger.Products.Contract.Model;
+
 using GeekBurger.Service.Contract;
 using Microsoft.AspNetCore.Mvc;
 
-[Route("api/payment")]
+[Route("api/[controller]")]
 
 public class PaymentController : Controller
 {
@@ -20,14 +20,12 @@ public class PaymentController : Controller
     }
 
     [HttpPost()]
-    public IActionResult AddOrder([FromBody] PaymentToUpsert paymentToAdd)
+    public IActionResult Pay([FromBody] PaymentToUpsert paymentToAdd)
     {
         if (paymentToAdd == null)
             return BadRequest();
         var payment = _mapper.Map<Payment>(paymentToAdd);
-        _paymentRepository.Add(payment);
-        _paymentRepository.Save();
-
+        _paymentRepository.Register(payment, paymentToAdd.StoreName);
         return Ok();
     }
 

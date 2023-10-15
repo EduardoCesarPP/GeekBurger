@@ -5,6 +5,7 @@ namespace GeekBurger.Production.Contract.Service
 {
     public interface IProductionService : IHostedService
     {
-        public Task<string> SolicitarDados(string key, ServicoExterno servicoExterno);
+        public Task<string>? CheckOrderChanges();
+        public Task<string>? CheckNewOrders();
     }
 }

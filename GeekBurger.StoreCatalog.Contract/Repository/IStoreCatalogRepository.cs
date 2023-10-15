@@ -1,7 +1,6 @@
-using GeekBurger.Products.Contract;
-using GeekBurger.Products.Contract.Model;
+using GeekBurger.Shared.Model;
 using GeekBurger.Service.Contract;
-using Microsoft.EntityFrameworkCore;
+
 namespace GeekBurger.StoreCatalogs.Contract.Repository
 {
     public interface IStoreCatalogRepository

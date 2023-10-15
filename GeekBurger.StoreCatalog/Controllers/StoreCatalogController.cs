@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using GeekBurger.Products.Contract.Model;
+
 using GeekBurger.Service.Contract;
 using GeekBurger.StoreCatalogs.Contract.Repository;
 using Microsoft.AspNetCore.Mvc;
@@ -24,6 +24,13 @@ public class StoreCatalogController : Controller
     {
         var acceptableProducts = _mapper.Map<List<ProductToGet>>(await _storeCatalogRepository.CarregarCatalogo(storeName, cpf));
         return Ok(acceptableProducts);
+    }
+
+
+    [HttpPost()]
+    public async Task<IActionResult> Teste([FromBody] OrderToUpsert storeName)
+    {
+        return Ok();
     }
 
 

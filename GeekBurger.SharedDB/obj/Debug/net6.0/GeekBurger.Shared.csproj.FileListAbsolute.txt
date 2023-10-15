@@ -1,0 +1,15 @@
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.SharedDB\bin\Debug\net6.0\GeekBurger.Shared.deps.json
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.SharedDB\bin\Debug\net6.0\GeekBurger.Shared.dll
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.SharedDB\bin\Debug\net6.0\ref\GeekBurger.Shared.dll
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.SharedDB\bin\Debug\net6.0\GeekBurger.Shared.pdb
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.SharedDB\bin\Debug\net6.0\GeekBurger.Service.Contract.dll
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.SharedDB\bin\Debug\net6.0\GeekBurger.Service.Contract.pdb
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.SharedDB\obj\Debug\net6.0\GeekBurger.Shared.csproj.AssemblyReference.cache
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.SharedDB\obj\Debug\net6.0\GeekBurger.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.SharedDB\obj\Debug\net6.0\GeekBurger.Shared.AssemblyInfoInputs.cache
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.SharedDB\obj\Debug\net6.0\GeekBurger.Shared.AssemblyInfo.cs
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.SharedDB\obj\Debug\net6.0\GeekBurger.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.SharedDB\obj\Debug\net6.0\GeekBurger.Shared.csproj.CopyComplete
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.SharedDB\obj\Debug\net6.0\GeekBurger.Shared.dll
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.SharedDB\obj\Debug\net6.0\ref\GeekBurger.Shared.dll
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.SharedDB\obj\Debug\net6.0\GeekBurger.Shared.pdb

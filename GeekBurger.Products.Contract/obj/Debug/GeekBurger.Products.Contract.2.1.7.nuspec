@@ -8,10 +8,11 @@
     <dependencies>
       <group targetFramework="net6.0">
         <dependency id="GeekBurger.Service.Contract" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="GeekBurger.Shared" version="1.0.0" exclude="Build,Analyzers" />
         <dependency id="AutoMapper" version="12.0.1" exclude="Build,Analyzers" />
         <dependency id="Azure.Messaging.ServiceBus" version="7.16.1" exclude="Build,Analyzers" />
-        <dependency id="Microsoft.EntityFrameworkCore" version="7.0.11" exclude="Build,Analyzers" />
-        <dependency id="Microsoft.EntityFrameworkCore.InMemory" version="7.0.11" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="7.0.12" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.InMemory" version="7.0.12" exclude="Build,Analyzers" />
         <dependency id="Microsoft.Extensions.Configuration.Binder" version="7.0.4" exclude="Build,Analyzers" />
         <dependency id="Microsoft.Extensions.Hosting.Abstractions" version="7.0.0" exclude="Build,Analyzers" />
         <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />

@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "QCa/iRiCv4hKNKGxFLYykBGBI3KRvRM/2FqEekn1Bzehogtxk2DykMjWvybAIyGYAKLKNpVIHtGQn4nYOzynnw==",
+  "dgSpecHash": "P5FjtO3PG3SlkC84W4HupXN0wNSBAAMSqf55PKhRDBBlkv2jmQfM7NUmfG0d0A1seWu9TFITvxehXmHWTHh6bA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Arquitetura_Integracao_Microsservicos\\GeekBurger\\GeekBurger.StoreCatalog.Contract\\GeekBurger.StoreCatalog.Contract.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
-    "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\azure.core\\1.34.0\\azure.core.1.34.0.nupkg.sha512",
+    "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\azure.core.amqp\\1.3.0\\azure.core.amqp.1.3.0.nupkg.sha512",
-    "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\azure.messaging.servicebus\\7.16.1\\azure.messaging.servicebus.7.16.1.nupkg.sha512",
-    "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\microsoft.azure.amqp\\2.6.2\\microsoft.azure.amqp.2.6.2.nupkg.sha512",
+    "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\azure.messaging.servicebus\\7.16.2\\azure.messaging.servicebus.7.16.2.nupkg.sha512",
+    "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\microsoft.azure.amqp\\2.6.3\\microsoft.azure.amqp.2.6.3.nupkg.sha512",
     "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.12\\microsoft.entityframeworkcore.7.0.12.nupkg.sha512",

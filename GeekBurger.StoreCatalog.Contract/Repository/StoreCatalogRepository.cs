@@ -1,10 +1,9 @@
 ﻿using AutoMapper;
-using GeekBurger.Products.Contract.Model;
-using GeekBurger.Products.Contract.Service;
 using GeekBurger.Service.Contract;
 using GeekBurger.StoreCatalogs.Contract.Service;
 using Newtonsoft.Json;
-using System.Text;
+using GeekBurger.Shared.Model;
+
 
 namespace GeekBurger.StoreCatalogs.Contract.Repository
 {

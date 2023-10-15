@@ -1,7 +1,3 @@
-
-
-using System.Collections.Generic;
-using GeekBurger.Products.Contract.Model;
 using Microsoft.Extensions.Hosting;
 
 namespace GeekBurger.StoreCatalogs.Contract.Service

@@ -5,23 +5,14 @@ using AutoMapper;
 using Azure.Messaging.ServiceBus;
 using Azure.Messaging.ServiceBus.Administration;
 using System.Text;
+using GeekBurger.Shared.Service;
 
 namespace GeekBurger.Production.Contract.Service
 {
     public class ProductionService : IProductionService
-    {
-        private Dictionary<ServicoExterno, string> filasResponse = new Dictionary<ServicoExterno, string>
-        {
-            { ServicoExterno.ConsultarProdutos, "productsCatalogResponse"  } ,
-            { ServicoExterno.ConsultarIngredientes, "ingredientsCatalogResponse"  },
-            { ServicoExterno.ConsultarRestricoes, "restrictionsCatalogResponse"  }
-        };
-        private Dictionary<ServicoExterno, string> filasRequest = new Dictionary<ServicoExterno, string>
-        {
-            { ServicoExterno.ConsultarProdutos, "catalogProductsRequest"  } ,
-            { ServicoExterno.ConsultarIngredientes, "catalogIngredientsRequest"  },
-            { ServicoExterno.ConsultarRestricoes, "catalogRestrictionsRequest"  }
-        };
+    { 
+        private const string FilaNovasOrdens = "newOrderProduction";
+        private const string FilaMudancas = "orderResults";
         private const string MicroService = "StoreCatalog";
         private readonly IConfiguration _configuration;
         private IMapper _mapper;
@@ -45,64 +36,29 @@ namespace GeekBurger.Production.Contract.Service
         {
             var config = _configuration.GetSection("serviceBus").Get<ServiceBusConfiguration>();
             var adminClient = new ServiceBusAdministrationClient(config.ConnectionString);
-            foreach (var Ingredient in filasResponse.Concat(filasRequest))
-            {
-                if (!await adminClient.QueueExistsAsync(Ingredient.Value))
-                    await adminClient.CreateQueueAsync(Ingredient.Value);
-            }
+
+            if (!await adminClient.QueueExistsAsync(FilaNovasOrdens))
+                await adminClient.CreateQueueAsync(FilaNovasOrdens);
+
+            if (!await adminClient.QueueExistsAsync(FilaMudancas))
+                await adminClient.CreateQueueAsync(FilaMudancas);
         }
-        public async Task<string> SolicitarDados(string key, ServicoExterno servicoExterno)
-        {
-            Guid sessionId = Guid.NewGuid();
-            await SendRequestMessage(key, sessionId.ToString(), servicoExterno);
-            return await ReceiveReplyMessage(sessionId.ToString(), servicoExterno);
-        }
-        public async Task SendRequestMessage(string msg, string sessionId, ServicoExterno servicoExterno)
+      
+
+
+        public async Task<string> CheckNewOrders()
         {
             if (_lastTask != null && !_lastTask.IsCompleted)
-                return;
-
-            var config = _configuration.GetSection("serviceBus").Get<ServiceBusConfiguration>();
-            var client = new ServiceBusClient(config.ConnectionString);
-
-            var queue = (filasRequest.Where(f => f.Key == servicoExterno).FirstOrDefault()).Value;
-            var sender = client.CreateSender(queue);
-            var requestMsg = new ServiceBusMessage(msg);
-            requestMsg.SessionId = sessionId;
-            await sender.SendMessageAsync(requestMsg);
-        }
-        public async Task<string> ReceiveReplyMessage(string sessionId, ServicoExterno servicoExterno)
-        {
-            if (_lastTask != null && !_lastTask.IsCompleted)
-                return "Pending Task";
-
-            var config = _configuration.GetSection("serviceBus").Get<ServiceBusConfiguration>();
-            var client = new ServiceBusClient(config.ConnectionString);
-
-            var queue = (filasResponse.Where(f => f.Key == servicoExterno).FirstOrDefault()).Value;
-            var receiver = await client.AcceptSessionAsync(queue, sessionId);
-            var replyMsg = await receiver.ReceiveMessageAsync();
-            if (replyMsg != null)
-            {
-                return replyMsg.Body.ToString();
-            }
-            else
-            {
-                throw new Exception("Failed to get reply from server");
-            }
-        }
-
-
-        public async Task<List<string>>? CheckOrders(string sessionId, ServicoExterno servicoExterno)
-        {
-            if (_lastTask != null && !_lastTask.IsCompleted)
-                return null;
+                return "Pending task";
 
             var messages = new List<string>();
             var config = _configuration.GetSection("serviceBus").Get<ServiceBusConfiguration>();
             var client = new ServiceBusClient(config.ConnectionString);
 
-            var receiver = await client.AcceptSessionAsync("newOrderProduction", sessionId);
+            var receiver = client.CreateReceiver(FilaNovasOrdens, new ServiceBusReceiverOptions
+            {
+                ReceiveMode = ServiceBusReceiveMode.ReceiveAndDelete
+            });
 
             ServiceBusReceivedMessage message;
             while ((message = await receiver.ReceiveMessageAsync(TimeSpan.FromSeconds(5))) != null)
@@ -111,19 +67,21 @@ namespace GeekBurger.Production.Contract.Service
                 messages.Add(text);
                 _logService.SendMessagesAsync($"Novo pedido: {text}");
             }
-            return messages;
+            receiver.CloseAsync();
+
+            return messages.Count == 0 ? "" : $"[{String.Join(',', messages)}]";
         }
 
-        public async Task<List<string>>? CheckOrderChanged()
+        public async Task<string> CheckOrderChanges()
         {
             if (_lastTask != null && !_lastTask.IsCompleted)
-                return null;
+                return "Pending task";
 
             var messages = new List<String>();
             var config = _configuration.GetSection("serviceBus").Get<ServiceBusConfiguration>();
             var client = new ServiceBusClient(config.ConnectionString);
 
-            var receiver = client.CreateReceiver("orderResults", new ServiceBusReceiverOptions
+            var receiver = client.CreateReceiver(FilaMudancas, new ServiceBusReceiverOptions
             {
                 ReceiveMode = ServiceBusReceiveMode.ReceiveAndDelete
             });
@@ -133,7 +91,10 @@ namespace GeekBurger.Production.Contract.Service
             {
                 messages.Add(message.Body.ToString());
             }
-            return messages;
+
+            receiver.CloseAsync();
+
+            return messages.Count == 0 ? "" : $"[{String.Join(',', messages)}]";
         }
 
         public async Task NotifyOrderEnding(string key, string result)

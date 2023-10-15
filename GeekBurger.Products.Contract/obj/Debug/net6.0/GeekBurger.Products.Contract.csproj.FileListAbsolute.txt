@@ -38,7 +38,9 @@ C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservi
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Products.Contract\bin\Debug\net6.0\ref\GeekBurger.Products.Contract.dll
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Products.Contract\bin\Debug\net6.0\GeekBurger.Products.Contract.pdb
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Products.Contract\bin\Debug\net6.0\GeekBurger.Service.Contract.dll
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Products.Contract\bin\Debug\net6.0\GeekBurger.Shared.dll
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Products.Contract\bin\Debug\net6.0\GeekBurger.Service.Contract.pdb
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Products.Contract\bin\Debug\net6.0\GeekBurger.Shared.pdb
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Products.Contract\obj\Debug\net6.0\GeekBurger.Products.Contract.csproj.AssemblyReference.cache
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Products.Contract\obj\Debug\net6.0\GeekBurger.Products.Contract.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Products.Contract\obj\Debug\net6.0\GeekBurger.Products.Contract.AssemblyInfoInputs.cache

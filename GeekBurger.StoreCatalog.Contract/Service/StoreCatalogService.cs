@@ -1,11 +1,8 @@
-﻿
-
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using AutoMapper;
 using Azure.Messaging.ServiceBus;
 using Azure.Messaging.ServiceBus.Administration;
-using System.Text;
-using GeekBurger.Products.Contract.Model;
+using GeekBurger.Shared.Configuration;
 
 namespace GeekBurger.StoreCatalogs.Contract.Service
 {

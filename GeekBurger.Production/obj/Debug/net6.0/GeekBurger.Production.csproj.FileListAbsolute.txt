@@ -7,6 +7,7 @@ C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservi
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production\bin\Debug\net6.0\ref\GeekBurger.Production.dll
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production\bin\Debug\net6.0\GeekBurger.Production.pdb
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production\bin\Debug\net6.0\Azure.Core.dll
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production\bin\Debug\net6.0\Azure.Core.Amqp.dll
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production\bin\Debug\net6.0\Azure.Messaging.ServiceBus.dll
@@ -35,10 +36,10 @@ C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservi
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production\bin\Debug\net6.0\System.Memory.Data.dll
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production\bin\Debug\net6.0\GeekBurger.Production.Contract.dll
-C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production\bin\Debug\net6.0\GeekBurger.Products.Contract.dll
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production\bin\Debug\net6.0\GeekBurger.Service.Contract.dll
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production\bin\Debug\net6.0\GeekBurger.Shared.dll
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production\bin\Debug\net6.0\GeekBurger.Production.Contract.pdb
-C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production\bin\Debug\net6.0\GeekBurger.Products.Contract.pdb
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production\bin\Debug\net6.0\GeekBurger.Shared.pdb
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production\bin\Debug\net6.0\GeekBurger.Service.Contract.pdb
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production\obj\Debug\net6.0\GeekBurger.Production.csproj.AssemblyReference.cache
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Arquitetura_Integracao_Microsservicos\GeekBurger\GeekBurger.Production\obj\Debug\net6.0\GeekBurger.Production.GeneratedMSBuildEditorConfig.editorconfig

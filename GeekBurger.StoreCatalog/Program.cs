@@ -1,4 +1,7 @@
-using GeekBurger.Products.Contract.Repository;
+global using GeekBurger.Shared;
+global using GeekBurger.Shared.Extensions;
+global using GeekBurger.Shared.Model;
+using GeekBurger.Shared.ExternalRepositories;
 using GeekBurger.StoreCatalogs.Contract.Repository;
 using GeekBurger.StoreCatalogs.Contract.Service;
 using Microsoft.EntityFrameworkCore;
@@ -14,7 +17,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ProductsDbContext>(o => o.UseInMemoryDatabase("geekburger-products"));
-builder.Services.AddScoped<IUsersRepository, UsersRepository>();
+builder.Services.AddScoped<IStoreRepository, StoresRepository>();
+builder.Services.AddScoped<IProductsRepository, ProductsRepository>();
 builder.Services.AddScoped<IStoreCatalogService, StoreCatalogService>();
 builder.Services.AddScoped<IStoreCatalogRepository, StoreCatalogRepository>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());

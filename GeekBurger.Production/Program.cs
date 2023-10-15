@@ -1,25 +1,29 @@
+using AutoMapper;
+using GeekBurger.Production.Contract.Repository;
+using GeekBurger.Production.Contract.Service;
+using GeekBurger.Shared.Service;
+using GeekBurger.Production.Helper;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Register a hosted service to process messages from the queue
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSingleton<ILogService, LogService>();
+builder.Services.AddSingleton<IProductionService, ProductionService>();
+builder.Services.AddSingleton<IProductionRepository, ProductionRepository>();
+
+var mapperConfig = new MapperConfiguration(mc =>
+{
+    mc.AddProfile(new ProductionAutomapperProfile());
+});
+
+IMapper mapper = mapperConfig.CreateMapper();
+builder.Services.AddSingleton(mapper);
+
+builder.Services.AddHostedService<ProductionBackgroundService>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
 app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
 
 app.Run();

@@ -1,7 +1,8 @@
 ﻿
 using AutoMapper;
 using GeekBurger.Production.Contract.Repository;
-using GeekBurger.Products.Contract.Model;
+using GeekBurger.Shared.Model;
+
 using Microsoft.AspNetCore.Mvc;
 
 [Route("api/order")]
@@ -31,7 +32,7 @@ public class ProductionController : Controller
             bool AchouNovos = false;
             bool AchouAlteracao = false;
 
-            var NovosPedidos = _mapper.Map<List<Order>>(await _productionRepository.CheckOrders());
+            var NovosPedidos = _mapper.Map<List<Order>>(await _productionRepository.CheckNewOrders());
             if (NovosPedidos is not null)
             {
                 NovosPedidos.ForEach(order =>

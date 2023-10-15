@@ -8,8 +8,12 @@
     ".NETCoreApp,Version=v6.0": {
       "GeekBurger.Production/1.0.0": {
         "dependencies": {
+          "AutoMapper": "12.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "GeekBurger.Production.Contract": "1.0.0",
-          "GeekBurger.Products.Contract": "2.1.7",
+          "GeekBurger.Shared": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.12",
+          "Microsoft.EntityFrameworkCore.InMemory": "7.0.12",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
@@ -27,7 +31,19 @@
           }
         }
       },
-      "Azure.Core/1.34.0": {
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.1": {
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "Microsoft.Extensions.Options": "7.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.1.0"
+          }
+        }
+      },
+      "Azure.Core/1.35.0": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
           "System.Diagnostics.DiagnosticSource": "6.0.1",
@@ -39,14 +55,14 @@
         },
         "runtime": {
           "lib/net6.0/Azure.Core.dll": {
-            "assemblyVersion": "1.34.0.0",
-            "fileVersion": "1.3400.23.36203"
+            "assemblyVersion": "1.35.0.0",
+            "fileVersion": "1.3500.23.45706"
           }
         }
       },
       "Azure.Core.Amqp/1.3.0": {
         "dependencies": {
-          "Microsoft.Azure.Amqp": "2.6.2",
+          "Microsoft.Azure.Amqp": "2.6.3",
           "System.Memory": "4.5.4",
           "System.Memory.Data": "1.0.2"
         },
@@ -57,26 +73,26 @@
           }
         }
       },
-      "Azure.Messaging.ServiceBus/7.16.1": {
+      "Azure.Messaging.ServiceBus/7.16.2": {
         "dependencies": {
-          "Azure.Core": "1.34.0",
+          "Azure.Core": "1.35.0",
           "Azure.Core.Amqp": "1.3.0",
-          "Microsoft.Azure.Amqp": "2.6.2",
+          "Microsoft.Azure.Amqp": "2.6.3",
           "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
           "System.Memory.Data": "1.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Azure.Messaging.ServiceBus.dll": {
-            "assemblyVersion": "7.16.1.0",
-            "fileVersion": "7.1600.123.41504"
+            "assemblyVersion": "7.16.2.0",
+            "fileVersion": "7.1600.223.51103"
           }
         }
       },
-      "Microsoft.Azure.Amqp/2.6.2": {
+      "Microsoft.Azure.Amqp/2.6.3": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.Azure.Amqp.dll": {
             "assemblyVersion": "2.4.0.0",
-            "fileVersion": "2.6.2.0"
+            "fileVersion": "2.6.3.0"
           }
         }
       },
@@ -89,38 +105,38 @@
         }
       },
       "Microsoft.CSharp/4.7.0": {},
-      "Microsoft.EntityFrameworkCore/7.0.11": {
+      "Microsoft.EntityFrameworkCore/7.0.12": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.11",
-          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.11",
+          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.12",
+          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.12",
           "Microsoft.Extensions.Caching.Memory": "7.0.0",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Microsoft.Extensions.Logging": "7.0.0"
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.dll": {
-            "assemblyVersion": "7.0.11.0",
-            "fileVersion": "7.0.1123.40906"
+            "assemblyVersion": "7.0.12.0",
+            "fileVersion": "7.0.1223.47811"
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/7.0.11": {
+      "Microsoft.EntityFrameworkCore.Abstractions/7.0.12": {
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
-            "assemblyVersion": "7.0.11.0",
-            "fileVersion": "7.0.1123.40906"
+            "assemblyVersion": "7.0.12.0",
+            "fileVersion": "7.0.1223.47811"
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/7.0.11": {},
-      "Microsoft.EntityFrameworkCore.InMemory/7.0.11": {
+      "Microsoft.EntityFrameworkCore.Analyzers/7.0.12": {},
+      "Microsoft.EntityFrameworkCore.InMemory/7.0.12": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.11"
+          "Microsoft.EntityFrameworkCore": "7.0.12"
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
-            "assemblyVersion": "7.0.11.0",
-            "fileVersion": "7.0.1123.40906"
+            "assemblyVersion": "7.0.12.0",
+            "fileVersion": "7.0.1223.47811"
           }
         }
       },
@@ -347,34 +363,35 @@
       "GeekBurger.Production.Contract/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.1",
-          "Azure.Messaging.ServiceBus": "7.16.1",
-          "GeekBurger.Products.Contract": "2.1.7",
-          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Configuration.Binder": "7.0.4",
-          "Microsoft.Extensions.Hosting.Abstractions": "7.0.0"
-        },
-        "runtime": {
-          "GeekBurger.Production.Contract.dll": {}
-        }
-      },
-      "GeekBurger.Products.Contract/2.1.7": {
-        "dependencies": {
-          "AutoMapper": "12.0.1",
-          "Azure.Messaging.ServiceBus": "7.16.1",
+          "Azure.Messaging.ServiceBus": "7.16.2",
           "GeekBurger.Service.Contract": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "7.0.11",
-          "Microsoft.EntityFrameworkCore.InMemory": "7.0.11",
+          "GeekBurger.Shared": "1.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
           "Microsoft.Extensions.Configuration.Binder": "7.0.4",
           "Microsoft.Extensions.Hosting.Abstractions": "7.0.0",
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
-          "GeekBurger.Products.Contract.dll": {}
+          "GeekBurger.Production.Contract.dll": {}
         }
       },
       "GeekBurger.Service.Contract/1.0.0": {
         "runtime": {
           "GeekBurger.Service.Contract.dll": {}
+        }
+      },
+      "GeekBurger.Shared/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "Azure.Messaging.ServiceBus": "7.16.2",
+          "GeekBurger.Service.Contract": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.12",
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "7.0.4",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "GeekBurger.Shared.dll": {}
         }
       }
     }
@@ -392,12 +409,19 @@
       "path": "automapper/12.0.1",
       "hashPath": "automapper.12.0.1.nupkg.sha512"
     },
-    "Azure.Core/1.34.0": {
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6dNpM8OlGO+5gvt97tHXBp9qWRFkimRFulupDSGRgyT3sje1kQNza1/EMYaDcolmNARPmVJo8+wgD6ReV9wG5Q==",
-      "path": "azure.core/1.34.0",
-      "hashPath": "azure.core.1.34.0.nupkg.sha512"
+      "sha512": "sha512-+g/K+Vpe3gGMKGzjslMOdqNlkikScDjWfVvmWTayrDHaG/n2pPmFBMa+jKX1r/h6BDGFdkyRjAuhFE3ykW+r1g==",
+      "path": "automapper.extensions.microsoft.dependencyinjection/12.0.1",
+      "hashPath": "automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512"
+    },
+    "Azure.Core/1.35.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hENcx03Jyuqv05F4RBEPbxz29UrM3Nbhnr6Wl6NQpoU9BCIbL3XLentrxDCTrH54NLS11Exxi/o8MYgT/cnKFA==",
+      "path": "azure.core/1.35.0",
+      "hashPath": "azure.core.1.35.0.nupkg.sha512"
     },
     "Azure.Core.Amqp/1.3.0": {
       "type": "package",
@@ -406,19 +430,19 @@
       "path": "azure.core.amqp/1.3.0",
       "hashPath": "azure.core.amqp.1.3.0.nupkg.sha512"
     },
-    "Azure.Messaging.ServiceBus/7.16.1": {
+    "Azure.Messaging.ServiceBus/7.16.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8wlJPbfPnM6EksXeIlGiCDMpc8pD0Ps4PMa9ULI5NaCWlWJwmMPw8TxPAFkEknegvcnwGWkknbXhhTyWULYMoQ==",
-      "path": "azure.messaging.servicebus/7.16.1",
-      "hashPath": "azure.messaging.servicebus.7.16.1.nupkg.sha512"
+      "sha512": "sha512-NYsS/NegOww3mXy0BbWidjvfgecTouUnf6KIkkj6my7FxruCV6IQKeNFC8EQ0Dpy2Cq8rf94yn14SorCY1lxCw==",
+      "path": "azure.messaging.servicebus/7.16.2",
+      "hashPath": "azure.messaging.servicebus.7.16.2.nupkg.sha512"
     },
-    "Microsoft.Azure.Amqp/2.6.2": {
+    "Microsoft.Azure.Amqp/2.6.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6hQqWRiHRd9J6pGBlzQM9LBOWaO8xIsRVYs3olrDGqOkK7v9mgwz9rmrv+49FIbLEOGgkP9IKLnXdsA4Y8IIYw==",
-      "path": "microsoft.azure.amqp/2.6.2",
-      "hashPath": "microsoft.azure.amqp.2.6.2.nupkg.sha512"
+      "sha512": "sha512-iPbNNII4YZGkka7JQS0ZsZfZLcM7dwIoov/DyFiaemRqOTrdJCLgYnFBFhc/3TSh0ZI4/5TpxQPSPSckZ65jmA==",
+      "path": "microsoft.azure.amqp/2.6.3",
+      "hashPath": "microsoft.azure.amqp.2.6.3.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",
@@ -434,33 +458,33 @@
       "path": "microsoft.csharp/4.7.0",
       "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore/7.0.11": {
+    "Microsoft.EntityFrameworkCore/7.0.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-r7YGITjQ7v1hYtUXIavjSx+T1itKVPUFAIBN7HaKNjbR8x+gep8w9H3NEchglJOh1woZR4b2MhbSo2YFRZwZDg==",
-      "path": "microsoft.entityframeworkcore/7.0.11",
-      "hashPath": "microsoft.entityframeworkcore.7.0.11.nupkg.sha512"
+      "sha512": "sha512-HRge/bJ5SKMNeqybC4NnRwWZn69QBjVVoVmwhmJ8xgQ50Ye+jTOOf2mef/y4Lrq1HUeMg8cu+3JeFdnp+Y8skA==",
+      "path": "microsoft.entityframeworkcore/7.0.12",
+      "hashPath": "microsoft.entityframeworkcore.7.0.12.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/7.0.11": {
+    "Microsoft.EntityFrameworkCore.Abstractions/7.0.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IoOnhycZ0/VtLowf0HgB0cujxwksokzkS3/5108AHOcbntHUTqwxtCjG4E4FCly/45G+mxb+4PxBdFZhA49lwQ==",
-      "path": "microsoft.entityframeworkcore.abstractions/7.0.11",
-      "hashPath": "microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512"
+      "sha512": "sha512-GDlY3DzUbpagqb0683NUM2RK9eJFjTfmlLJd5YtvzBf8T4dwanIOSjd2vN7dXJihyZ0JlYaCetyHgxzbrxiUOw==",
+      "path": "microsoft.entityframeworkcore.abstractions/7.0.12",
+      "hashPath": "microsoft.entityframeworkcore.abstractions.7.0.12.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/7.0.11": {
+    "Microsoft.EntityFrameworkCore.Analyzers/7.0.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Qexum5safSSfijx6P1QSq5bVJPPTM/uf7lQmpL/shkiozEC/0FzqNaVUfFpbNN8zsO1jMFYbeDMF4cxJMlTT9w==",
-      "path": "microsoft.entityframeworkcore.analyzers/7.0.11",
-      "hashPath": "microsoft.entityframeworkcore.analyzers.7.0.11.nupkg.sha512"
+      "sha512": "sha512-feFe61uKUNoHJfo9tnO65BTzcpWEYIr34xWikhYgZl5c9RiiUJLuCoTqoGc9fuuKy+xk9aUa1NwgDGMC4KmBig==",
+      "path": "microsoft.entityframeworkcore.analyzers/7.0.12",
+      "hashPath": "microsoft.entityframeworkcore.analyzers.7.0.12.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.InMemory/7.0.11": {
+    "Microsoft.EntityFrameworkCore.InMemory/7.0.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Wc0YniYccjbzg8URydo3zbVUR0NLdvpIPU5qO0Vyvtl2Ty7fFmD6/RfbESjdcnszgiGt417OZiwmiiC+w3hmTA==",
-      "path": "microsoft.entityframeworkcore.inmemory/7.0.11",
-      "hashPath": "microsoft.entityframeworkcore.inmemory.7.0.11.nupkg.sha512"
+      "sha512": "sha512-Tdrvt7y1OKmyPjyzFlYeLnoe0zI78ypWlG87ck5cIYYVnst60fklbrVGxUMXdkwPiYmnGVIUL5H0lfh+dFwD1Q==",
+      "path": "microsoft.entityframeworkcore.inmemory/7.0.12",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.7.0.12.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "type": "package",
@@ -656,12 +680,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "GeekBurger.Products.Contract/2.1.7": {
+    "GeekBurger.Service.Contract/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "GeekBurger.Service.Contract/1.0.0": {
+    "GeekBurger.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

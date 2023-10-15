@@ -9,16 +9,16 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.12" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GeekBurger.Production.Contract\GeekBurger.Production.Contract.csproj" />
-    <ProjectReference Include="..\GeekBurger.Products.Contract\GeekBurger.Products.Contract.csproj" />
+    <ProjectReference Include="..\GeekBurger.Order.Contract\GeekBurger.Order.Contract.csproj" />
     <ProjectReference Include="..\GeekBurger.Service.Contract\GeekBurger.Service.Contract.csproj" />
+    <ProjectReference Include="..\GeekBurger.SharedDB\GeekBurger.Shared.csproj" />
   </ItemGroup>
 
 </Project>
